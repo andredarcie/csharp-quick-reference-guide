@@ -6,6 +6,7 @@
 * [Variables](#variables)
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
+* [Decision Making](#decision-making)
 
 ## Hello World Example
 
@@ -88,3 +89,54 @@ bool r = (x || y); // Logical OR Operator
 bool r = !(x || y); // Logical NOT Operator
 ```
 
+## Decision Making
+
+```csharp
+
+if(boolean_expression)
+{
+   /* boolean expression is true */
+}
+
+if(boolean_expression)
+{
+   /* boolean expression is true */
+}
+else
+{
+   /* expression is false */
+}
+
+if(boolean_expression1)
+{
+   /* boolean expression 1 is true */
+}
+else if (boolean_expression2)
+{
+   /* boolean expression 2 is true */
+}
+else
+{
+   /* expression 1 and 2 are false */
+}
+
+if( boolean_expression1)
+{
+   /* boolean expression 1 is true */
+   if(boolean_expression2)
+   {
+      /* expression 2 is true */
+   }
+}
+
+switch(place) {
+   case 1  :
+      Console.WriteLine("First!");
+      break; 
+   case 2  :
+      Console.WriteLine("Second!");
+      break; 
+   default : /* Optional */
+      Console.WriteLine("Invalid place!");
+}
+```
