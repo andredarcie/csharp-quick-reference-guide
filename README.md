@@ -7,6 +7,7 @@
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
 * [Decision Making](#decision-making)
+* [License](#license)
 
 ## Hello World Example
 
@@ -140,3 +141,6 @@ switch(place) {
       Console.WriteLine("Invalid place!");
 }
 ```
+
+## License
+The andredarcie/csharp-guide is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
