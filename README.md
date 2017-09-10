@@ -7,6 +7,7 @@
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
 * [Decision Making](#decision-making)
+* [Contributing](#contributing)
 * [License](#license)
 
 ## Hello World Example
@@ -141,6 +142,15 @@ switch(place) {
       Console.WriteLine("Invalid place!");
 }
 ```
+## Contributing
+
+Feel free to open tickets or send pull requests with improvements. Thanks in
+advance for your help!
+
+### How to Contribute?
+
+Just follow the [contribution guidelines](https://github.com/andredarcie/csharp-guide/blob/master/CONTRIBUTING.md).
 
 ## License
+
 The andredarcie/csharp-guide is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
