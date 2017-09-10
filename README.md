@@ -5,6 +5,7 @@
 * [Hello World](#hello-world-example)
 * [Variables](#variables)
 * [Type Conversion](#type-conversion)
+* [Operators](#operators)
 
 ## Hello World Example
 
@@ -60,3 +61,29 @@ x.ToUInt16(); // Converts a type to an unsigned int type
 x.ToUInt32(); // Converts a type to an unsigned long type
 x.ToUInt64(); // Converts a type to an unsigned big integer
 ```
+
+## Operators
+
+// Arithmetic Operators
+var r = x + y; // Adds two operands
+var r = x - y; // Subtracts second operand from the first
+var r = x * y; // Multiplies both operands
+var r = x / y; // Divides numerator by de-numerator
+var r = x % y; // Modulus Operator and remainder of after an integer division
+var r = x++; // Increment operator increases integer value by one
+var r = x--; // Decrement operator decreases integer value by one
+
+// Relational Operators
+bool r = (x == y); // Checks if the values of two operands are equal
+bool r = (x != y); // Checks if the values of two operands are equal or not
+bool r = (x > y); // Checks if the value of left operand is greater than the value of right operand
+bool r = (x < y); // Checks if the value of left operand is less than the value of right operand
+bool r = (x >= y); // Checks if the value of left operand is greater than or equal to the value of right operand
+bool r = (x <= y); // Checks if the value of left operand is less than or equal to the value of right operand
+
+// Logical Operators
+bool r = (x && y); // Logical AND operator
+bool r = (x || y); // Logical OR Operator
+bool r = !(x || y); // Logical NOT Operator
+
+
