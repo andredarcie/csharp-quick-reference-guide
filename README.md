@@ -64,6 +64,7 @@ x.ToUInt64(); // Converts a type to an unsigned big integer
 
 ## Operators
 
+```csharp
 // Arithmetic Operators
 var r = x + y; // Adds two operands
 var r = x - y; // Subtracts second operand from the first
@@ -85,5 +86,5 @@ bool r = (x <= y); // Checks if the value of left operand is less than or equal 
 bool r = (x && y); // Logical AND operator
 bool r = (x || y); // Logical OR Operator
 bool r = !(x || y); // Logical NOT Operator
-
+```
 
