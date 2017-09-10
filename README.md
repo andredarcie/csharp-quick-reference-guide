@@ -4,6 +4,7 @@
 
 * [Hello World](#hello-world-example)
 * [Variables](#variables)
+* [Type Conversion](#type-conversion)
 
 ## Hello World Example
 
@@ -37,4 +38,25 @@ short sh = 1; // -32,768 to 32,767
 uint ui = 1; // 0 to 4,294,967,295
 ulong ul = 1; // 0 to 18,446,744,073,709,551,615
 ushort us = 1; // 0 to 65,535
+```
+
+## Type Conversion
+
+```csharp
+x.ToBoolean(); // Converts a type to a Boolean value
+x.ToByte(); // Converts a type to a byte
+x.ToChar(); // Converts a type to a single Unicode character
+x.ToDateTime(); // Converts a type (integer or string type) to date-time structures
+x.ToDecimal(); // Converts a floating point or integer type to a decimal type
+x.ToDouble(); // Converts a type to a double type
+x.ToInt16(); // Converts a type to a 16-bit integer
+x.ToInt32(); // Converts a type to a 32-bit integer
+x.ToInt64(); // Converts a type to a 64-bit integer
+x.ToSbyte(); // Converts a type to a signed byte type
+x.ToSingle(); // Converts a type to a small floating point number
+x.ToString(); // Converts a type to a string
+x.ToType(); // Converts a type to a specified type
+x.ToUInt16(); // Converts a type to an unsigned int type
+x.ToUInt32(); // Converts a type to an unsigned long type
+x.ToUInt64(); // Converts a type to an unsigned big integer
 ```
