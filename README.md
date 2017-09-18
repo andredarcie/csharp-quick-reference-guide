@@ -10,6 +10,7 @@
 * [Loops](#loops)
 * [Methods](#methods)
 * [Nullables](#nullables)
+* [Arrays](#arrays)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -262,6 +263,16 @@ int? x = null;
 int? y = 2;
 
 var z = x ?? 10; // Null Coalescing Operator
+```
+
+## Arrays
+```csharp
+double[] balance = new double[10]; // Initializing an Array
+double[] marks = { 1, 2, 3}; // Assigning Values to an Array
+
+balance[0] = 10;
+
+var first = double[0];
 ```
 
 ## Contributing
