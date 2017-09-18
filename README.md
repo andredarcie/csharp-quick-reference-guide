@@ -12,6 +12,7 @@
 * [Nullables](#nullables)
 * [Arrays](#arrays)
 * [Strings](#strings)
+* [Structures](#structures)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -280,6 +281,21 @@ var first = double[0];
 ```csharp
 string name = "John doe";
 Console.WriteLine("Name: {0}", name);
+```
+
+## Structures
+```csharp
+struct Books
+{
+   public string title;
+   public string author;
+   public string subject;
+   public int book_id;
+}; 
+
+Books Book1;   /* Declare Book1 of type Book */
+Book1.title = "Csharp Programming";
+Console.WriteLine( "Book 1 title : {0}", Book1.title);
 ```
 
 ## Contributing
