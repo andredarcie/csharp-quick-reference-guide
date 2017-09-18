@@ -8,6 +8,7 @@
 * [Operators](#operators)
 * [Decision Making](#decision-making)
 * [Loops](#loops)
+* [Methods](#methods)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -232,6 +233,26 @@ do
    Console.WriteLine("value of x: {0}", x);
    x++;
 } 
+```
+
+## Methods
+```csharp
+using System;
+namespace CalculatorApplication
+{
+   class Calculator
+   {
+      public int Sum(int x, int y)
+      {
+         return x + y;
+      }
+      static void Main(string[] args)
+      {
+         var result = Sum(2, 2);
+         Console.WriteLine("result: {0}", result);
+      }
+   }
+}
 ```
 
 ## Contributing
