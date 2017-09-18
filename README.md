@@ -7,6 +7,7 @@
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
 * [Decision Making](#decision-making)
+* [Loops](#loops)
 * [Contributing](#contributing)
 * [License](#license)
 
