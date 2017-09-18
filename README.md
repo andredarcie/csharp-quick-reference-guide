@@ -159,6 +159,80 @@ switch(place) {
 }
 ```
 
+## Loops
+
+* While loop
+```csharp
+while(condition)
+{
+   Console.WriteLine("Hello!");
+}
+```
+
+* For loop
+```csharp
+for (int x = 0; x < 10; x++)
+{
+   Console.WriteLine("value of x: {0}", x);
+}
+```
+
+* Do...while loop
+```csharp
+int x = 0;
+
+do
+{
+   Console.WriteLine("value of x: {0}", x);
+   x++;
+} 
+while (x < 10);
+```
+
+* Nested loops
+```csharp
+for (int x = 0; x < 10; x++)
+{
+   for (int y = 0; y < 10; y++) 
+   {
+      Console.WriteLine("x: {0}, y: {1}", x, y);
+   }
+}
+```
+
+* Break Statement
+```csharp
+int x = 0;
+
+while (x < 10)
+{
+   Console.WriteLine("value of x: {0}", x);
+   x++;
+   if (x > 5)
+   {
+      /* terminate the loop using break statement */
+      break;
+   }
+}
+```
+
+* Continue Statement
+```csharp
+int x = 0;
+
+do
+{
+   if (x == 5)
+   {
+      x++;
+      /* skip the iteration */
+      continue;
+   }
+   Console.WriteLine("value of x: {0}", x);
+   x++;
+} 
+```
+
 ## Contributing
 
 Feel free to open tickets or send pull requests with improvements. Thanks in
