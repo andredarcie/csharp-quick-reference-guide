@@ -11,6 +11,7 @@
 * [Methods](#methods)
 * [Nullables](#nullables)
 * [Arrays](#arrays)
+* [Strings](#strings)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -273,6 +274,12 @@ double[] marks = { 1, 2, 3}; // Assigning Values to an Array
 balance[0] = 10;
 
 var first = double[0];
+```
+
+## Strings
+```csharp
+string name = "John doe";
+Console.WriteLine("Name: {0}", name);
 ```
 
 ## Contributing
