@@ -97,13 +97,16 @@ x--; // Decrement operator decreases integer value by one
 
 ## Decision Making
 
+* If statement
 ```csharp
-
 if(boolean_expression)
 {
    /* boolean expression is true */
 }
+```
 
+* If else statement
+```csharp
 if(boolean_expression)
 {
    /* boolean expression is true */
@@ -112,7 +115,10 @@ else
 {
    /* expression is false */
 }
+```
 
+* If else statement
+```csharp
 if(boolean_expression1)
 {
    /* boolean expression 1 is true */
@@ -125,7 +131,10 @@ else
 {
    /* expression 1 and 2 are false */
 }
+```
 
+* Nested if statements
+```csharp
 if( boolean_expression1)
 {
    /* boolean expression 1 is true */
@@ -134,7 +143,10 @@ if( boolean_expression1)
       /* expression 2 is true */
    }
 }
+```
 
+* Switch statement
+```csharp
 switch(place) {
    case 1  :
       Console.WriteLine("First!");
@@ -146,6 +158,7 @@ switch(place) {
       Console.WriteLine("Invalid place!");
 }
 ```
+
 ## Contributing
 
 Feel free to open tickets or send pull requests with improvements. Thanks in
