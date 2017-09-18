@@ -9,6 +9,7 @@
 * [Decision Making](#decision-making)
 * [Loops](#loops)
 * [Methods](#methods)
+* [Nullables](#nullables)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -253,6 +254,14 @@ namespace CalculatorApplication
       }
    }
 }
+```
+
+## Nullables
+```csharp
+int? x = null;
+int? y = 2;
+
+var z = x ?? 10; // Null Coalescing Operator
 ```
 
 ## Contributing
