@@ -13,6 +13,7 @@
 * [Arrays](#arrays)
 * [Strings](#strings)
 * [Structures](#structures)
+* [Enums](#enums)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -296,6 +297,13 @@ struct Books
 Books Book1;   /* Declare Book1 of type Book */
 Book1.title = "Csharp Programming";
 Console.WriteLine( "Book 1 title : {0}", Book1.title);
+```
+
+## Enums
+```csharp
+enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
+
+Console.WriteLine("Monday: {0}", (int)Days.Mon;);
 ```
 
 ## Contributing
