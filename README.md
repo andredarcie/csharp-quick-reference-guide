@@ -1,6 +1,6 @@
 # C# Guide
 
-> Discovering csharp through code samples. 
+> Discovering csharp through code samples. 😉
 
 ## Table of Contents
 
