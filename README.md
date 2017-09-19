@@ -16,7 +16,6 @@
 * [Enums](#enums)
 * [Classes](#classes)
 * [Polymorphism](#polymorphism)
-
 * [Contributing](#contributing)
 * [License](#license)
 
