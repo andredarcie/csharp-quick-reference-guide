@@ -17,6 +17,7 @@
 * [Classes](#classes)
 * [Polymorphism](#polymorphism)
 * [Inheritance](#inheritance)
+* [Interface](#interface)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -398,6 +399,32 @@ class Rectangle: Shape
    { 
       return (width * height); 
    }
+}
+```
+
+## Interface 
+```csharp
+public interface IPerson
+{
+    // interface members
+    public int Talk();
+}
+
+class Person : IPerson
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    
+    public Person(int age, string name)
+    {
+        Age = age;
+        Name = name;
+    }
+
+    public int Talk()
+    {
+        return "Hello!";
+    }
 }
 ```
 
