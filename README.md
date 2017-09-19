@@ -1,5 +1,7 @@
 # C# Guide
 
+> Discovering csharp through sample codes. 
+
 ## Table of Contents
 
 * [Hello World](#hello-world-example)
