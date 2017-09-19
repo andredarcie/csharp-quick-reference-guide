@@ -18,6 +18,7 @@
 * [Polymorphism](#polymorphism)
 * [Inheritance](#inheritance)
 * [Interface](#interface)
+* [Exception Handling](#exception-handling)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -425,6 +426,30 @@ class Person : IPerson
     {
         return "Hello!";
     }
+}
+```
+
+## Exception Handling
+```csharp
+try
+{
+   // statements causing exception
+}
+catch( ExceptionName e1 )
+{
+   // error handling code
+}
+catch( ExceptionName e2 )
+{
+   // error handling code
+}
+catch( ExceptionName eN )
+{
+   // error handling code
+}
+finally
+{
+   // statements to be executed
 }
 ```
 
