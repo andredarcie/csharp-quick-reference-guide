@@ -271,11 +271,11 @@ var z = x ?? 10; // Null Coalescing Operator
 ## Arrays
 ```csharp
 double[] balance = new double[10]; // Initializing an Array
-double[] marks = { 1, 2, 3}; // Assigning Values to an Array
+double[] marks = { 1, 2, 3 }; // Assigning Values to an Array
 
 balance[0] = 10;
 
-var first = double[0];
+var first = balance[0];
 ```
 
 ## Strings
