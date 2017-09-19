@@ -58,6 +58,7 @@ uint ui = 1; // 0 to 4,294,967,295
 ulong ul = 1; // 0 to 18,446,744,073,709,551,615
 ushort us = 1; // 0 to 65,535
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Type Conversion
 
@@ -79,6 +80,7 @@ x.ToUInt16(); // Converts a type to an unsigned int type
 x.ToUInt32(); // Converts a type to an unsigned long type
 x.ToUInt64(); // Converts a type to an unsigned big integer
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Operators
 
@@ -109,6 +111,7 @@ x--; // Decrement operator decreases integer value by one
 (x || y); // Logical OR Operator
 !(x || y); // Logical NOT Operator
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Decision Making
 
@@ -173,6 +176,7 @@ switch(place) {
       Console.WriteLine("Invalid place!");
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Loops
 
@@ -247,6 +251,7 @@ do
    x++;
 } 
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Methods
 ```csharp
@@ -267,6 +272,7 @@ namespace CalculatorApplication
    }
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Nullables
 ```csharp
@@ -275,6 +281,7 @@ int? y = 2;
 
 var z = x ?? 10; // Null Coalescing Operator
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Arrays
 ```csharp
@@ -285,12 +292,14 @@ balance[0] = 10;
 
 var first = balance[0];
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Strings
 ```csharp
 string name = "John doe";
 Console.WriteLine("Name: {0}", name);
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Structures
 ```csharp
@@ -306,6 +315,7 @@ Books Book1;   /* Declare Book1 of type Book */
 Book1.title = "Csharp Programming";
 Console.WriteLine( "Book 1 title : {0}", Book1.title);
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Enums
 ```csharp
@@ -313,6 +323,7 @@ enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
 
 Console.WriteLine("Monday: {0}", (int)Days.Mon);
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Classes
 ```csharp
@@ -342,6 +353,7 @@ public class Application
     }
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Polymorphism
 ```csharp
@@ -379,6 +391,7 @@ class Rectangle : Shape
     }
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Inheritance
 ```csharp
@@ -405,6 +418,7 @@ class Rectangle: Shape
    }
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Interface 
 ```csharp
@@ -431,6 +445,7 @@ class Person : IPerson
     }
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Exception Handling
 ```csharp
@@ -455,6 +470,7 @@ finally
    // statements to be executed
 }
 ```
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 
