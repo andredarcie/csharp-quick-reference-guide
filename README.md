@@ -14,6 +14,7 @@
 * [Strings](#strings)
 * [Structures](#structures)
 * [Enums](#enums)
+* [Classes](#classes)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -304,6 +305,35 @@ Console.WriteLine( "Book 1 title : {0}", Book1.title);
 enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
 
 Console.WriteLine("Monday: {0}", (int)Days.Mon);
+```
+
+## Classes
+```csharp
+class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    
+    public Person(int age, string name)
+    {
+        Age = age;
+        Name = name;
+    }
+
+    public int Talk()
+    {
+        return "Hello!";
+    }
+}
+
+public class Application
+{
+    static void Main()
+    {
+      Person person = new Person("Bill", 42);
+      Console.WriteLine("person Name = {0} Age = {1}", person.Name, person.Age);
+    }
+}
 ```
 
 ## Contributing
