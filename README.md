@@ -303,7 +303,7 @@ Console.WriteLine( "Book 1 title : {0}", Book1.title);
 ```csharp
 enum Days { Sun, Mon, tue, Wed, thu, Fri, Sat };
 
-Console.WriteLine("Monday: {0}", (int)Days.Mon;);
+Console.WriteLine("Monday: {0}", (int)Days.Mon);
 ```
 
 ## Contributing
