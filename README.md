@@ -16,6 +16,7 @@
 * [Enums](#enums)
 * [Classes](#classes)
 * [Polymorphism](#polymorphism)
+* [Inheritance](#inheritance)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -371,6 +372,32 @@ class Rectangle : Shape
         Console.WriteLine("Drawing a rectangle");
         base.Draw();
     }
+}
+```
+
+## Inheritance
+```csharp
+class Shape 
+{
+   public void setWidth(int w)
+   {
+      width = w;
+   }
+   public void setHeight(int h)
+   {
+      height = h;
+   }
+   protected int width;
+   protected int height;
+}
+
+// Derived class
+class Rectangle: Shape
+{
+   public int getArea()
+   { 
+      return (width * height); 
+   }
 }
 ```
 
