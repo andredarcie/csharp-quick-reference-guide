@@ -19,6 +19,7 @@
 * [Classes](#classes)
 * [Polymorphism](#polymorphism)
 * [Inheritance](#inheritance)
+* [Abstract](#abstract)
 * [Interface](#interface)
 * [Exception Handling](#exception-handling)
 * [Collections](#collections)
@@ -417,6 +418,26 @@ class Rectangle: Shape
    { 
       return (width * height); 
    }
+}
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Abstract
+```csharp
+abstract class BaseClass
+{
+    protected int _x = 100;
+    protected int _y = 150;
+    public abstract void AbstractMethod();
+}
+
+class DerivedClass : BaseClass
+{
+    public override void AbstractMethod()
+    {
+        _x++;
+        _y++;
+    }
 }
 ```
 **[⬆ back to top](#table-of-contents)**
