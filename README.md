@@ -26,6 +26,10 @@
 * [Contributing](#contributing)
 * [License](#license)
 
+## C# Keywords
+
+[abstract](#abstract), [as](#as)
+
 ## Hello World Example
 
 ```csharp
@@ -81,6 +85,15 @@ x.ToType(); // Converts a type to a specified type
 x.ToUInt16(); // Converts a type to an unsigned int type
 x.ToUInt32(); // Converts a type to an unsigned long type
 x.ToUInt64(); // Converts a type to an unsigned big integer
+```
+
+* As
+```csharp
+SomeType x = y as SomeType;
+if (x != null)
+{
+  // Do something
+}
 ```
 **[⬆ back to top](#table-of-contents)**
 
