@@ -5,6 +5,7 @@
 ## Table of Contents
 
 * [Hello World](#hello-world-example)
+* [Comments](#comments)
 * [Variables](#variables)
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
@@ -44,6 +45,17 @@ namespace HelloWorldApplication
       }
    }
 }
+```
+**[⬆ back to top](#table-of-contents)**
+
+## Comments
+
+```csharp
+/* The 
+multiline
+comments */
+
+// Single-line comments
 ```
 **[⬆ back to top](#table-of-contents)**
 
