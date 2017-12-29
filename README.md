@@ -338,9 +338,12 @@ struct Books
    public int book_id;
 }; 
 
-Books Book1;   /* Declare Book1 of type Book */
-Book1.title = "Csharp Programming";
+Books book1;   /* Declare Book1 of type Book */
+book1.title = "Csharp Programming";
 Console.WriteLine( "Book 1 title : {0}", Book1.title);
+
+Books book2 = new Books() {title = "Hamlet", author = "William Shakespeare", subject = "tragedy", book_id = 1};
+Console.WriteLine( "Book 1 title : {0}", Book2.title);
 ```
 **[⬆ back to top](#table-of-contents)**
 
