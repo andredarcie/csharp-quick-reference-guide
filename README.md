@@ -78,9 +78,9 @@ ushort us = 1; // 0 to 65,535
 ## C# Keywords
 
 ```csharp
-abstract // 
-as // 
-base //
+abstract // Indicates that the thing being modified has a missing or incomplete implementation.
+as // Performs certain types of conversions between compatible reference types or nullable types. 
+base // Access members of the base class from within a derived class
 bool //
 break //
 byte //
