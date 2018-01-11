@@ -7,7 +7,7 @@
 * [Hello World](#hello-world-example)
 * [Comments](#comments)
 * [Variables](#variables)
-* [C# Keywords](#c#-keywords)
+* [C# Keywords](#csharp-keywords)
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
 * [Decision Making](#decision-making)
@@ -75,7 +75,7 @@ ushort us = 1; // 0 to 65,535
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## C# Keywords
+## Csharp Keywords
 
 ```csharp
 abstract // Indicates that the thing being modified has a missing or incomplete implementation.
