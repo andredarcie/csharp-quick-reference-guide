@@ -78,7 +78,86 @@ ushort us = 1; // 0 to 65,535
 ## C# Keywords
 
 ```csharp
-[abstract](#abstract), [as](#as), [base](#base), [bool](#bool), break, byte, case, catch, char, checked, class, const, continue,	decimal,	default,	delegate, do, double, else, enum, event, explicit, extern, false, finally, fixed, float, for, foreach, goto, if, implicit, in, in (generic modifier), int, interface, internal, is, lock, long, namespace, new, null, object, operator, out, out (generic modifier), override, params, private, protected, public, readonly, ref, return, sbyte, sealed, short, sizeof, stackalloc, static, string, struct,	switch, this, throw, true, try, typeof, uint, ulong, unchecked, unsafe, ushort, using, using static, virtual, void, volatile,	while
+abstract // 
+as // 
+base //
+bool //
+break //
+byte //
+case //
+catch //
+char //
+checked //
+class //
+const //
+continue //
+decimal //
+default //
+delegate //
+do //
+double //
+else //
+enum //
+event //
+explicit //
+extern //
+false //
+finally //
+fixed //
+float //
+for //
+foreach //
+goto //
+if //
+implicit //
+in //
+in (generic modifier) // 
+int //
+interface //
+internal //
+is //
+lock //
+long //
+namespace //
+new //
+null //
+object //
+operator //
+out //
+out (generic modifier) //
+override //
+params //
+private //
+protected //
+public //
+readonly //
+ref //
+return //
+sbyte //
+sealed //
+short //
+sizeof //
+stackalloc //
+static //
+string //
+struct //
+switch //
+this //
+throw //
+true //
+try //
+typeof //
+uint //
+ulong //
+unchecked //
+unsafe //
+ushort //
+using //
+using static //
+virtual //
+void //
+volatile //
+while //
 ```
 **[⬆ back to top](#table-of-contents)**
 
