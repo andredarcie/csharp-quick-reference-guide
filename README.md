@@ -7,6 +7,7 @@
 * [Hello World](#hello-world-example)
 * [Comments](#comments)
 * [Variables](#variables)
+* [C# Keywords](#c#-keywords)
 * [Type Conversion](#type-conversion)
 * [Operators](#operators)
 * [Decision Making](#decision-making)
@@ -26,10 +27,6 @@
 * [Collections](#collections)
 * [Contributing](#contributing)
 * [License](#license)
-
-## C# Keywords
-
-[abstract](#abstract), [as](#as), [base](#base), [bool](#bool), break, byte, case, catch, char, checked, class, const, continue,	decimal,	default,	delegate, do, double, else, enum, event, explicit, extern, false, finally, fixed, float, for, foreach, goto, if, implicit, in, in (generic modifier), int, interface, internal, is, lock, long, namespace, new, null, object, operator, out, out (generic modifier), override, params, private, protected, public, readonly, ref, return, sbyte, sealed, short, sizeof, stackalloc, static, string, struct,	switch, this, throw, true, try, typeof, uint, ulong, unchecked, unsafe, ushort, using, using static, virtual, void, volatile,	while
 
 ## Hello World Example
 
@@ -75,6 +72,13 @@ short sh = 1; // -32,768 to 32,767
 uint ui = 1; // 0 to 4,294,967,295
 ulong ul = 1; // 0 to 18,446,744,073,709,551,615
 ushort us = 1; // 0 to 65,535
+```
+**[⬆ back to top](#table-of-contents)**
+
+## C# Keywords
+
+```csharp
+[abstract](#abstract), [as](#as), [base](#base), [bool](#bool), break, byte, case, catch, char, checked, class, const, continue,	decimal,	default,	delegate, do, double, else, enum, event, explicit, extern, false, finally, fixed, float, for, foreach, goto, if, implicit, in, in (generic modifier), int, interface, internal, is, lock, long, namespace, new, null, object, operator, out, out (generic modifier), override, params, private, protected, public, readonly, ref, return, sbyte, sealed, short, sizeof, stackalloc, static, string, struct,	switch, this, throw, true, try, typeof, uint, ulong, unchecked, unsafe, ushort, using, using static, virtual, void, volatile,	while
 ```
 **[⬆ back to top](#table-of-contents)**
 
