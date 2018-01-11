@@ -81,13 +81,13 @@ ushort us = 1;    // 0 to 65,535
 abstract       // Indicates that the thing being modified has a missing or incomplete implementation.
 as             // Performs certain types of conversions between compatible reference types or nullable types. 
 base           // Access members of the base class from within a derived class
-bool           //
-break          //
-byte           //
-case           //
-catch          //
-char           //
-checked        //
+bool           // Used to declare variables to store the Boolean values, true and false
+break          // Terminates the closest enclosing loop or switch statement in which it appears
+byte           // Denotes an integral type
+case           // Chooses a single switch section to execute from a list of candidates based on a pattern match
+catch          // Specify handlers for different exceptions
+char           // Represent a Unicode character
+checked        // Used to explicitly enable overflow checking for integral-type arithmetic operations and conversions
 class          //
 const          //
 continue       //
