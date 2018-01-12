@@ -25,7 +25,7 @@
 * [Interface](#interface)
 * [Exception Handling](#exception-handling)
 * [Collections](#collections)
-* [Checked](#checked)
+* [Checked](#checked-and-unchecked)
 * Const (TODO)
 * Delegate (TODO)
 * Event (TODO)
