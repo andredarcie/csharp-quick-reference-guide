@@ -25,7 +25,7 @@
 * [Interface](#interface)
 * [Exception Handling](#exception-handling)
 * [Collections](#collections)
-* Checked (TODO)
+* [Checked](#checked)
 * Const (TODO)
 * Delegate (TODO)
 * Event (TODO)
@@ -53,8 +53,7 @@
 * Stackalloc (TODO)     
 * Static (TODO)
 * This (TODO)
-* Typeof (TODO)         
-* Unchecked (TODO)      
+* Typeof (TODO)              
 * Unsafe (TODO)         
 * Using static (TODO)
 * Virtual (TODO)    
@@ -740,6 +739,33 @@ foreach (bool bit in bitArray)
    Console.WriteLine(bit);
 }
 ```
+**[⬆ back to top](#table-of-contents)**
+
+## Checked and Unchecked 
+
+* Checked
+```csharp
+// The following statements are checked by default at compile time. They do not
+// compile.
+//int1 = 2147483647 + 10;
+//int1 = ConstantMax + 10;
+
+// If the previous sum is attempted in a checked environment, an 
+// OverflowException error is raised.
+
+// Checked expression.
+Console.WriteLine(checked(2147483647 + ten));
+```
+
+* Unchecked
+```csharp
+// The following statements compile and run.
+unchecked
+{
+   int1 = 2147483647 + 10;
+}
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Contributing
