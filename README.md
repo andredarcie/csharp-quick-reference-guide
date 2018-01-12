@@ -747,8 +747,8 @@ foreach (bool bit in bitArray)
 ```csharp
 // The following statements are checked by default at compile time. They do not
 // compile.
-//int1 = 2147483647 + 10;
-//int1 = ConstantMax + 10;
+int1 = 2147483647 + 10;
+int1 = ConstantMax + 10;
 
 // If the previous sum is attempted in a checked environment, an 
 // OverflowException error is raised.
