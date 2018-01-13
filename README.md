@@ -26,7 +26,6 @@
 * [Exception Handling](#exception-handling)
 * [Collections](#collections)
 * [Checked](#checked-and-unchecked)
-* Const (TODO)
 * Delegate (TODO)
 * Event (TODO)
 * Explicit (TODO)       
@@ -105,6 +104,8 @@ short sh = 1;     // -32,768 to 32,767
 uint ui = 1;      // 0 to 4,294,967,295
 ulong ul = 1;     // 0 to 18,446,744,073,709,551,615
 ushort us = 1;    // 0 to 65,535
+
+const int x = 0;  // Constant fields and locals aren't variables and may not be modified
 ```
 **[⬆ back to top](#table-of-contents)**
 
