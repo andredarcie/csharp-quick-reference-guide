@@ -27,7 +27,7 @@
 * [Collections](#collections)
 * [Checked](#checked-and-unchecked)
 * [Delegate](#delegate)
-* Event (TODO)
+* [Event](#event)
 * Explicit (TODO)       
 * Extern (TODO)
 * Fixed (TODO)
@@ -811,6 +811,35 @@ class DelegateTest
     // multByTwo: 9
     // square: 25
     // cube: 83.740234375
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Event
+
+```csharp
+public class SampleEventArgs
+{
+    public SampleEventArgs(string s) { Text = s; }
+    public String Text {get; private set;} // readonly
+}
+public class Publisher
+{
+    // Declare the delegate (if using non-generic pattern).
+    public delegate void SampleEventHandler(object sender, SampleEventArgs e);
+
+    // Declare the event.
+    public event SampleEventHandler SampleEvent;
+
+    // Wrap the event in a protected virtual method
+    // to enable derived classes to raise the event.
+    protected virtual void RaiseSampleEvent()
+    {
+        // Raise the event by using the () operator.
+        if (SampleEvent != null)
+            SampleEvent(this, new SampleEventArgs("Hello"));
+    }
 }
 ```
 
