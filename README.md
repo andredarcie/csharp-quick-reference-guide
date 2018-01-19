@@ -28,7 +28,7 @@
 * [Checked](#checked-and-unchecked)
 * [Delegate](#delegate)
 * [Event](#event)
-* Explicit (TODO)       
+* [Explicit](#explicit)       
 * Extern (TODO)
 * Fixed (TODO)
 * Goto (TODO)
@@ -841,6 +841,22 @@ public class Publisher
             SampleEvent(this, new SampleEventArgs("Hello"));
     }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Explicit
+
+```csharp
+// Must be defined inside a class called Fahrenheit:
+public static explicit operator Celsius(Fahrenheit fahr)
+{
+    return new Celsius((5.0f / 9.0f) * (fahr.degrees - 32));
+}
+
+Fahrenheit fahr = new Fahrenheit(100.0f);
+Console.Write("{0} Fahrenheit", fahr.Degrees);
+Celsius c = (Celsius)fahr;
 ```
 
 **[⬆ back to top](#table-of-contents)**
