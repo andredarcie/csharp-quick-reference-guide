@@ -29,7 +29,7 @@
 * [Delegate](#delegate)
 * [Event](#event)
 * [Explicit](#explicit)       
-* Extern (TODO)
+* [Extern](#extern)
 * Fixed (TODO)
 * Goto (TODO)
 * Implicit (TODO)
@@ -857,6 +857,16 @@ public static explicit operator Celsius(Fahrenheit fahr)
 Fahrenheit fahr = new Fahrenheit(100.0f);
 Console.Write("{0} Fahrenheit", fahr.Degrees);
 Celsius c = (Celsius)fahr;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Extern
+
+```csharp
+// Used to declare a method that is implemented externally
+[DllImport("avifil32.dll")]  
+private static extern void AVIFileInit(); 
 ```
 
 **[⬆ back to top](#table-of-contents)**
