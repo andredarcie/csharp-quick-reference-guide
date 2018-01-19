@@ -30,7 +30,7 @@
 * [Event](#event)
 * [Explicit](#explicit)       
 * [Extern](#extern)
-* Fixed (TODO)
+* [Fixed](#fixed)
 * Goto (TODO)
 * Implicit (TODO)
 * In (TODO)             
@@ -867,6 +867,34 @@ Celsius c = (Celsius)fahr;
 // Used to declare a method that is implemented externally
 [DllImport("avifil32.dll")]  
 private static extern void AVIFileInit(); 
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Fixed
+
+```csharp
+class Point 
+{ 
+   public int x;
+   public int y; 
+}
+
+// Fixed prevents the garbage collector from relocating a movable variable
+// The fixed statement is only permitted in an unsafe context
+unsafe static void TestMethod()
+{
+    // Variable pt is a managed variable, subject to garbage collection.
+    Point pt = new Point();
+
+    // Using fixed allows the address of pt members to be taken,
+    // and "pins" pt so that it is not relocated.
+
+    fixed (int* p = &pt.x)
+    {
+        *p = 1;
+    }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
