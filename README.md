@@ -32,8 +32,7 @@
 * [Extern](#extern)
 * [Fixed](#fixed)
 * [Goto](#goto)
-* [Implicit](#implicit)
-* In (TODO)             
+* [Implicit](#implicit)      
 * Internal (TODO)
 * Is (TODO)
 * Lock (TODO)
@@ -393,6 +392,21 @@ do
    Console.WriteLine("value of x: {0}", x);
    x++;
 } 
+```
+
+* Foreach, in
+```csharp
+ArrayList numbers = new ArrayList();
+numbers.Add(1);
+numbers.Add(2);
+numbers.Add(3);
+
+Console.WriteLine("Count: {0}", numbers.Count);
+
+foreach (int number in numbers)
+{
+   Console.Write(number + " ");
+}
 ```
 **[⬆ back to top](#table-of-contents)**
 
