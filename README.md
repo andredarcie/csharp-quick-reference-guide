@@ -31,7 +31,7 @@
 * [Explicit](#explicit)       
 * [Extern](#extern)
 * [Fixed](#fixed)
-* Goto (TODO)
+* [Goto](#goto)
 * Implicit (TODO)
 * In (TODO)             
 * Internal (TODO)
@@ -895,6 +895,40 @@ unsafe static void TestMethod()
         *p = 1;
     }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Goto
+
+```csharp
+// Transfers the program control directly to a labeled statement
+switch (option)
+{
+   case 1:
+       Console.WriteLine("Case 1.");
+       break;
+   case 2:
+       Console.WriteLine("Case 2.");
+       goto case 1;
+   case 3:
+       Console.WriteLine("Case 3.");
+       goto case 1;
+   default:
+       Console.WriteLine("Invalid selection.");
+       break;
+}
+
+for (int i = 0; i < 10; i++)
+{
+    if (i = 5)
+    {
+        goto Found;
+    }
+}
+
+Found:
+   Console.WriteLine("Found 5!");
 ```
 
 **[⬆ back to top](#table-of-contents)**
