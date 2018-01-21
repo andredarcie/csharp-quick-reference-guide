@@ -32,7 +32,7 @@
 * [Extern](#extern)
 * [Fixed](#fixed)
 * [Goto](#goto)
-* Implicit (TODO)
+* [Implicit](#implicit)
 * In (TODO)             
 * Internal (TODO)
 * Is (TODO)
@@ -929,6 +929,37 @@ for (int i = 0; i < 10; i++)
 
 Found:
    Console.WriteLine("Found 5!");
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Implicit
+
+```csharp
+class Digit
+{
+    public Digit(double d) { val = d; }
+    public double val;
+    // ...other members
+
+    // User-defined conversion from Digit to double
+    public static implicit operator double(Digit d)
+    {
+        return d.val;
+    }
+    //  User-defined conversion from double to Digit
+    public static implicit operator Digit(double d)
+    {
+        return new Digit(d);
+    }
+}
+
+// Use
+// Implicit "double" operator
+double num = dig;
+
+// Implicit "Digit" operator
+Digit dig2 = 12;
 ```
 
 **[⬆ back to top](#table-of-contents)**
