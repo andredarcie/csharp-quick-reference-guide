@@ -55,7 +55,8 @@
 * Unsafe (TODO)         
 * Using static (TODO)
 * Virtual (TODO)    
-* Volatile (TODO)  
+* Volatile (TODO)
+* Generics (TODO)  
 * [Contributing](#contributing)
 * [License](#license)
 
