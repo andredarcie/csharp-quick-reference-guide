@@ -24,7 +24,7 @@
 * [Abstract](#abstract)
 * [Interface](#interface)
 * [Exception Handling](#exception-handling)
-* [Collections](#collections)
+* Collections (TODO)
 * [Checked](#checked-and-unchecked)
 * [Delegate](#delegate)
 * [Event](#event)
@@ -649,110 +649,6 @@ catch( ExceptionName eN )
 finally
 {
    // statements to be executed
-}
-```
-**[⬆ back to top](#table-of-contents)**
-
-## Collections
-
-### Classes
-* ArrayList
-```csharp
-ArrayList numbers = new ArrayList();
-numbers.Add(1);
-numbers.Add(2);
-numbers.Add(3);
-
-Console.WriteLine("Count: {0}", numbers.Count);
-
-foreach (int number in numbers)
-{
-   Console.Write(number + " ");
-}
-```
-
-* Hashtable
-```csharp
-Hashtable list = new Hashtable();
-list.Add("01", "Emma");
-list.Add("02", "William");
-list.Add("03", "Mia");
-
-if (list.ContainsValue("Mia"))
-{
-   Console.WriteLine("This name is already in the list");
-}
-
-ICollection keys = list.Keys;
-         
-foreach (string key in keys)
-{
-   Console.WriteLine(key + ": " + list[key]);
-}
-```
-
-* SortedList
-```csharp
-SortedList list = new SortedList();
-list.Add("01", "Emma");
-list.Add("02", "William");
-list.Add("03", "Mia");
-
-ICollection keys = list.Keys;
-
-foreach (string key in keys)
-{
-   Console.WriteLine(key + ": " + list[key]);
-}
-```
-
-* Stack
-```csharp
-Stack st = new Stack();
-         
-st.Push('A');
-st.Push('M');
-st.Push('G');
-
-foreach (char c in st)
-{
-   Console.Write(c + " ");
-}
-
-st.Pop();
-st.Pop();
-st.Pop();
-```
-
-* Queue
-```csharp
-Queue queue = new Queue();
-         
-queue.Enqueue('A');
-queue.Enqueue('M');
-queue.Enqueue('G');
-
-foreach (char item in queue)
-{
-   Console.WriteLine(item + " ");
-}
-
-char removedValue = (char)queue.Dequeue();
-```
-
-* BitArray
-```csharp
-bool[] array = new bool[4];
-array[0] = true;
-array[1] = false;
-array[2] = true;
-array[3] = false;
-
-BitArray bitArray = new BitArray(array);
-
-foreach (bool bit in bitArray)
-{
-   Console.WriteLine(bit);
 }
 ```
 **[⬆ back to top](#table-of-contents)**
