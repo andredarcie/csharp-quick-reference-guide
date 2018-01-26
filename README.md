@@ -683,7 +683,7 @@ unchecked
 ## Delegate
 
 ```csharp
-// Declare delegate -- defines required signature:
+// Declare delegate, defines required signature:
 delegate double MathAction(double num);
 
 class DelegateTest
@@ -697,31 +697,24 @@ class DelegateTest
     static void Main()
     {
         // Instantiate delegate with named method:
-        MathAction ma = Double;
+        MathAction multByTwo = Double;
 
-        // Invoke delegate ma:
-        double multByTwo = ma(4.5);
-        Console.WriteLine("multByTwo: {0}", multByTwo);
+        // Invoke delegate multByTwo:
+        Console.WriteLine(multByTwo(4.5)); // 9
 
         // Instantiate delegate with anonymous method:
-        MathAction ma2 = delegate(double input)
+        MathAction square = delegate(double input)
         {
             return input * input;
         };
 
-        double square = ma2(5);
-        Console.WriteLine("square: {0}", square);
+        Console.WriteLine(square(5)); // 25
 
         // Instantiate delegate with lambda expression
-        MathAction ma3 = s => s * s * s;
-        double cube = ma3(4.375);
+        MathAction cube = s => s * s * s;
 
-        Console.WriteLine("cube: {0}", cube);
+        Console.WriteLine(cube(4.375)); // 83.740234375
     }
-    // Output:
-    // multByTwo: 9
-    // square: 25
-    // cube: 83.740234375
 }
 ```
 
