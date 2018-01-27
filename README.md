@@ -34,7 +34,7 @@
 * [Goto](#goto)
 * [Implicit](#implicit)      
 * [Access Modifiers](#access-modifiers)
-* Is (TODO)
+* [Is](#is)
 * Lock (TODO)
 * Object (TODO)         
 * Operator (TODO)
@@ -881,6 +881,16 @@ private // Access is limited to the containing type
 
 private protected // Access is limited to the containing class or types derived from the containing class   
 // within the current assembly
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Is
+
+```csharp
+if (obj is Person) { // Checks if an object is compatible with a given type
+   // Do something if obj is a Person.
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
