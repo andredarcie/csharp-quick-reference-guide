@@ -33,17 +33,15 @@
 * [Fixed](#fixed)
 * [Goto](#goto)
 * [Implicit](#implicit)      
-* Internal (TODO)
+* [Access Modifiers](#access-modifiers)
 * Is (TODO)
 * Lock (TODO)
 * Object (TODO)         
 * Operator (TODO)
 * Out (TODO)
 * Override (TODO)
-* Params (TODO)
-* Private (TODO)        
+* Params (TODO)     
 * Protected (TODO)      
-* Public (TODO) 
 * Readonly (TODO)
 * Ref (TODO)
 * Sealed (TODO)
@@ -864,6 +862,24 @@ double num = dig;
 
 // Implicit "Digit" operator
 Digit dig2 = 12;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Access Modifiers
+
+```csharp
+public // Access is not restricted
+
+protected // Access is limited to the containing class or types derived from the containing class
+
+internal // Access is limited to the current assembly
+
+protected internal // Access is limited to the current assembly or types derived from the containing class
+
+private // Access is limited to the containing type
+
+private protected // Access is limited to the containing class or types derived from the containing class within the current assembly
 ```
 
 **[⬆ back to top](#table-of-contents)**
