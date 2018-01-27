@@ -41,7 +41,6 @@
 * Out (TODO)
 * Override (TODO)
 * Params (TODO)     
-* Protected (TODO)      
 * Readonly (TODO)
 * Ref (TODO)
 * Sealed (TODO)
