@@ -38,7 +38,7 @@
 * [Lock](#lock)
 * [Object](#object)         
 * [Out](#out)
-* Override (TODO)
+* [Override](#override)
 * Params (TODO)     
 * Readonly (TODO)
 * Ref (TODO)
@@ -996,6 +996,31 @@ class Program
         // the ICovariant interface is covariant.
         iobj = istr;
     }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Override
+
+```csharp
+abstract class ShapesClass
+{
+    abstract public int Area(); // Abstract method to override
+}
+class Square : ShapesClass
+{
+    int side = 0;
+    public Square(int n)
+    {
+        side = n;
+    }
+    // Area method is required to avoid
+    // a compile-time error.
+    public override int Area() // Overridden implementation
+    {
+        return side * side;
+    } 
 }
 ```
 
