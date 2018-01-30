@@ -37,7 +37,6 @@
 * [Is](#is)
 * [Lock](#lock)
 * [Object](#object)         
-* Operator (TODO)
 * Out (TODO)
 * Override (TODO)
 * Params (TODO)     
@@ -251,6 +250,27 @@ x--;     // Decrement operator decreases integer value by one
 (x || y);   // Logical OR Operator
 !(x || y);  // Logical NOT Operator
 ```
+
+* Overload a built-in operator
+```csharp
+class Fraction
+{
+    int num, den;
+    public Fraction(int num, int den)
+    {
+        this.num = num;
+        this.den = den;
+    }
+
+    // overload operator +
+    public static Fraction operator +(Fraction a, Fraction b)
+    {
+        return new Fraction(a.num * b.den + b.num * a.den,
+           a.den * b.den);
+    }
+}
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Decision Making
