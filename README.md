@@ -39,7 +39,7 @@
 * [Object](#object)         
 * [Out](#out)
 * [Override](#override)
-* Params (TODO)     
+* [Params](#params)     
 * Readonly (TODO)
 * Ref (TODO)
 * Sealed (TODO)
@@ -1022,6 +1022,22 @@ class Square : ShapesClass
         return side * side;
     } 
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Params
+
+```csharp
+public static void UseParams(params object[] list) // Variable number of arguments.
+{
+  for (int i = 0; i < list.Length; i++)
+  {
+      Console.Write(list[i] + " ");
+  }
+}
+
+UseParams(1, 'a', "test");
 ```
 
 **[⬆ back to top](#table-of-contents)**
