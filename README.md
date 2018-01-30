@@ -37,7 +37,7 @@
 * [Is](#is)
 * [Lock](#lock)
 * [Object](#object)         
-* Out (TODO)
+* [Out](#out)
 * Override (TODO)
 * Params (TODO)     
 * Readonly (TODO)
@@ -950,6 +950,53 @@ object bo = true;   // True or false
 object by = 255;    // 0 to 255
 object ch = 'a';    // U +0000 to U +ffff
 object de = 1m;  // 128-bit precise decimal values
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Out
+
+* Parameter modifier
+```csharp
+class OutExample
+{
+   static void Method(out int i)
+   {
+      i = 44;
+   }
+   
+   static void Main()
+   {
+      int value;
+      Method(out value);
+      Console.WriteLine(value);     // value is now 44
+   }
+}
+```
+
+* Generic type parameter declarations 
+```csharp
+// Covariant interface.
+interface ICovariant<out R> { }
+
+// Extending covariant interface.
+interface IExtCovariant<out R> : ICovariant<R> { }
+
+// Implementing covariant interface.
+class Sample<R> : ICovariant<R> { }
+
+class Program
+{
+    static void Test()
+    {
+        ICovariant<Object> iobj = new Sample<Object>();
+        ICovariant<String> istr = new Sample<String>();
+
+        // You can assign istr to iobj because
+        // the ICovariant interface is covariant.
+        iobj = istr;
+    }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
