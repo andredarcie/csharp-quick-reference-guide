@@ -35,7 +35,7 @@
 * [Implicit](#implicit)      
 * [Access Modifiers](#access-modifiers)
 * [Is](#is)
-* Lock (TODO)
+* [Lock](#lock)
 * Object (TODO)         
 * Operator (TODO)
 * Out (TODO)
@@ -890,6 +890,31 @@ private protected // Access is limited to the containing class or types derived 
 if (obj is Person) { // Checks if an object is compatible with a given type
    // Do something if obj is a Person.
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Lock
+
+```csharp
+class Account  
+{  
+    decimal balance;  
+    private Object thisLock = new Object();  
+
+    public void Withdraw(decimal amount)  
+    {  
+        lock (thisLock) // Ensures that one thread does not enter a critical section of code 
+                        // while another thread is in the critical section.
+        {  
+            if (amount > balance)  
+            {  
+                throw new Exception("Insufficient funds");  
+            }  
+            balance -= amount;  
+        }  
+    }  
+} 
 ```
 
 **[⬆ back to top](#table-of-contents)**
