@@ -1030,7 +1030,7 @@ class RefExample
 ```
 
 * Out
-** Parameter modifier
+   - Parameter modifier
 ```csharp
 class OutExample
 {
@@ -1048,7 +1048,7 @@ class OutExample
 }
 ```
 
-** Generic type parameter declarations 
+   - Generic type parameter declarations 
 ```csharp
 // Covariant interface.
 interface ICovariant<out R> { }
