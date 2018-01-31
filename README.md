@@ -37,11 +37,9 @@
 * [Is](#is)
 * [Lock](#lock)
 * [Object](#object)         
-* [Out](#out)
-* [Override](#override)
-* [Params](#params)     
+* [Override](#override)   
 * [Readonly](#readonly)
-* Ref (TODO)
+* [Method Parameters](#method-parameters)
 * Sealed (TODO)
 * Sizeof (TODO)         
 * Stackalloc (TODO)     
@@ -954,53 +952,6 @@ object de = 1m;  // 128-bit precise decimal values
 
 **[⬆ back to top](#table-of-contents)**
 
-## Out
-
-* Parameter modifier
-```csharp
-class OutExample
-{
-   static void Method(out int i)
-   {
-      i = 44;
-   }
-   
-   static void Main()
-   {
-      int value;
-      Method(out value);
-      Console.WriteLine(value);     // value is now 44
-   }
-}
-```
-
-* Generic type parameter declarations 
-```csharp
-// Covariant interface.
-interface ICovariant<out R> { }
-
-// Extending covariant interface.
-interface IExtCovariant<out R> : ICovariant<R> { }
-
-// Implementing covariant interface.
-class Sample<R> : ICovariant<R> { }
-
-class Program
-{
-    static void Test()
-    {
-        ICovariant<Object> iobj = new Sample<Object>();
-        ICovariant<String> istr = new Sample<String>();
-
-        // You can assign istr to iobj because
-        // the ICovariant interface is covariant.
-        iobj = istr;
-    }
-}
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Override
 
 ```csharp
@@ -1026,22 +977,6 @@ class Square : ShapesClass
 
 **[⬆ back to top](#table-of-contents)**
 
-## Params
-
-```csharp
-public static void UseParams(params object[] list) // Variable number of arguments.
-{
-  for (int i = 0; i < list.Length; i++)
-  {
-      Console.Write(list[i] + " ");
-  }
-}
-
-UseParams(1, 'a', "test");
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Readonly
 
 ```csharp
@@ -1055,6 +990,85 @@ class Age
     void ChangeYear()
     {
         //_year = 1967; // Compile error if uncommented.
+    }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Method Parameters
+
+* Params
+```csharp
+public static void UseParams(params object[] list) // Variable number of arguments.
+{
+  for (int i = 0; i < list.Length; i++)
+  {
+      Console.Write(list[i] + " ");
+  }
+}
+
+UseParams(1, 'a', "test");
+```
+
+* Ref
+```csharp
+class RefExample
+{
+    static void Method(ref int i)
+    {
+        i = i + 44;
+    }
+
+    static void Main()
+    {
+        int val = 1;
+        Method(ref val);
+        Console.WriteLine(val); // 45
+    }
+}
+```
+
+* Out
+** Parameter modifier
+```csharp
+class OutExample
+{
+   static void Method(out int i)
+   {
+      i = 44;
+   }
+   
+   static void Main()
+   {
+      int value;
+      Method(out value);
+      Console.WriteLine(value);     // value is now 44
+   }
+}
+```
+
+** Generic type parameter declarations 
+```csharp
+// Covariant interface.
+interface ICovariant<out R> { }
+
+// Extending covariant interface.
+interface IExtCovariant<out R> : ICovariant<R> { }
+
+// Implementing covariant interface.
+class Sample<R> : ICovariant<R> { }
+
+class Program
+{
+    static void Test()
+    {
+        ICovariant<Object> iobj = new Sample<Object>();
+        ICovariant<String> istr = new Sample<String>();
+
+        // You can assign istr to iobj because
+        // the ICovariant interface is covariant.
+        iobj = istr;
     }
 }
 ```
