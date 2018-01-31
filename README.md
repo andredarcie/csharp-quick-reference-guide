@@ -1031,47 +1031,46 @@ class RefExample
 
 * Out
    - Parameter modifier
-```csharp
-class OutExample
-{
-   static void Method(out int i)
+   ```csharp
+   class OutExample
    {
-      i = 44;
-   }
-   
-   static void Main()
-   {
-      int value;
-      Method(out value);
-      Console.WriteLine(value);     // value is now 44
-   }
-}
-```
+      static void Method(out int i)
+      {
+         i = 44;
+      }
 
+      static void Main()
+      {
+         int value;
+         Method(out value);
+         Console.WriteLine(value);     // value is now 44
+      }
+   }
+   ```
    - Generic type parameter declarations 
-```csharp
-// Covariant interface.
-interface ICovariant<out R> { }
+   ```csharp
+   // Covariant interface.
+   interface ICovariant<out R> { }
 
-// Extending covariant interface.
-interface IExtCovariant<out R> : ICovariant<R> { }
+   // Extending covariant interface.
+   interface IExtCovariant<out R> : ICovariant<R> { }
 
-// Implementing covariant interface.
-class Sample<R> : ICovariant<R> { }
+   // Implementing covariant interface.
+   class Sample<R> : ICovariant<R> { }
 
-class Program
-{
-    static void Test()
-    {
-        ICovariant<Object> iobj = new Sample<Object>();
-        ICovariant<String> istr = new Sample<String>();
+   class Program
+   {
+       static void Test()
+       {
+           ICovariant<Object> iobj = new Sample<Object>();
+           ICovariant<String> istr = new Sample<String>();
 
-        // You can assign istr to iobj because
-        // the ICovariant interface is covariant.
-        iobj = istr;
-    }
-}
-```
+           // You can assign istr to iobj because
+           // the ICovariant interface is covariant.
+           iobj = istr;
+       }
+   }
+   ```
 
 **[⬆ back to top](#table-of-contents)**
 
