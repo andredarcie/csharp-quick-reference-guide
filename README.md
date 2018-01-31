@@ -40,7 +40,7 @@
 * [Out](#out)
 * [Override](#override)
 * [Params](#params)     
-* Readonly (TODO)
+* [Readonly](#readonly)
 * Ref (TODO)
 * Sealed (TODO)
 * Sizeof (TODO)         
@@ -1038,6 +1038,25 @@ public static void UseParams(params object[] list) // Variable number of argumen
 }
 
 UseParams(1, 'a', "test");
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Readonly
+
+```csharp
+class Age
+{
+    readonly int _year;
+    Age(int year)
+    {
+        _year = year;
+    }
+    void ChangeYear()
+    {
+        //_year = 1967; // Compile error if uncommented.
+    }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
