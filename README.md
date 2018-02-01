@@ -24,7 +24,6 @@
 * [Abstract](#abstract)
 * [Interface](#interface)
 * [Exception Handling](#exception-handling)
-* Collections (TODO)
 * [Checked](#checked-and-unchecked)
 * [Delegate](#delegate)
 * [Event](#event)
