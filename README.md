@@ -41,7 +41,7 @@
 * [Readonly](#readonly)
 * [Method Parameters](#method-parameters)
 * [Sealed](#sealed)      
-* Stackalloc (TODO)     
+* [Stackalloc](#stackalloc)     
 * Static (TODO)
 * This (TODO)
 * Typeof (TODO)              
@@ -1106,6 +1106,37 @@ class Z : Y
 
     // Overriding F2 is allowed.
     protected override void F2() { Console.WriteLine("Z.F2"); }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Stackalloc
+
+```csharp
+class Fibonacci
+{
+    static unsafe void Main() // Unsafe code context
+    {
+        const int arraySize = 20;
+        int* fib = stackalloc int[arraySize]; // Allocate a block of memory on the stack
+        int* p = fib;
+        // The sequence begins with 1, 1.
+        *p++ = *p++ = 1;
+        for (int i = 2; i < arraySize; ++i, ++p)
+        {
+            // Sum the previous two numbers.
+            *p = p[-1] + p[-2];
+        }
+        for (int i = 0; i < arraySize; ++i)
+        {
+            Console.WriteLine(fib[i]);
+        }
+
+        // Keep the console window open in debug mode.
+        System.Console.WriteLine("Press any key to exit.");
+        System.Console.ReadKey();
+    }
 }
 ```
 
