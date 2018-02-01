@@ -9,6 +9,7 @@
 * [Variables](#variables)
 * [C# Keywords](#csharp-keywords)
 * [Type Conversion](#type-conversion)
+* [Sizeof](#sizeof)   
 * [Operators](#operators)
 * [Decision Making](#decision-making)
 * [Loops](#loops)
@@ -39,8 +40,7 @@
 * [Override](#override)   
 * [Readonly](#readonly)
 * [Method Parameters](#method-parameters)
-* [Sealed](#sealed)
-* Sizeof (TODO)         
+* [Sealed](#sealed)      
 * Stackalloc (TODO)     
 * Static (TODO)
 * This (TODO)
@@ -216,6 +216,16 @@ if (x != null)
   // Do something
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Sizeof
+
+```csharp
+// Constant value 4:  
+int intSize = sizeof(int); 
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Operators
