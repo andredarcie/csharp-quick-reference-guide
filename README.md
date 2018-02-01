@@ -40,7 +40,7 @@
 * [Override](#override)   
 * [Readonly](#readonly)
 * [Method Parameters](#method-parameters)
-* Sealed (TODO)
+* [Sealed](#sealed)
 * Sizeof (TODO)         
 * Stackalloc (TODO)     
 * Static (TODO)
