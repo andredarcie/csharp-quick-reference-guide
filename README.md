@@ -1276,7 +1276,8 @@ class MyDerivedClass : MyBaseClass
 ```csharp
 class VolatileTest
 {
-    public volatile int i; // Indicates that a field might be modified by multiple threads that are executing at the same time
+    public volatile int i; // Indicates that a field might be modified by multiple 
+                           // threads that are executing at the same time
 
     public void Test(int _i)
     {
