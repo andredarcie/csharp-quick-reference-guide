@@ -159,10 +159,14 @@ object         // All types, predefined and user-defined, reference types and va
                // directly or indirectly from Object
 operator       // To overload a built-in operator or to provide a user-defined conversion in a class
                // or struct declaration.
-out            // As a parameter modifier, which lets you pass an argument to a method by reference rather than by value.
-               // Generic type parameter declarations for interfaces and delegates, which specifies that a type parameter is covariant
-out            // (generic modifier) Enables you to use a more derived type than that specified by the generic parameter
-override       // Modifier is required to extend or modify the abstract or virtual implementation of an inherited method, property,                    // indexer, or event
+out            // As a parameter modifier, which lets you pass an argument to a method by reference 
+               // rather than by value.
+               // Generic type parameter declarations for interfaces and delegates, which specifies that a type 
+               // parameter is covariant
+out            // (generic modifier) Enables you to use a more derived type than that specified 
+               // by the generic parameter
+override       // Modifier is required to extend or modify the abstract or virtual implementation of 
+               // an inherited method, property, indexer, or event
 params         // You can specify a method parameter that takes a variable number of arguments
 private        // Is a member access modifier the least permissive access level
 protected      // Is a member access modifier accessible within its class and by derived class instances
@@ -191,8 +195,9 @@ ulong          // Denotes an integral type, unsigned 64-bit integer
 unchecked      // Is used to suppress overflow-checking for integral-type arithmetic operations and conversions
 unsafe         // Denotes an unsafe context, which is required for any operation involving pointers
 ushort         // An integral type, unsigned 16-bit integer
-using          // As a directive, when it is used to create an alias for a namespace or to import types defined in other namespaces
-               // As a statement, when it defines a scope at the end of which an object will be disposed
+using          // As a directive, when it is used to create an alias for a namespace or to import types 
+               // defined in other namespace. As a statement, when it defines a scope at the end of which 
+               // an object will be disposed
 using static   // Designates a type whose static members you can access without specifying a type name
 virtual        // Is used to modify a method, property, indexer, or event declaration and allow for it to 
                // be overridden in a derived class
