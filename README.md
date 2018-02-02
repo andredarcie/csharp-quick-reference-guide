@@ -42,7 +42,7 @@
 * [Method Parameters](#method-parameters)
 * [Sealed](#sealed)      
 * [Stackalloc](#stackalloc)     
-* Static (TODO)
+* [Static](#static)
 * [This](#this)   
 * Typeof (TODO)              
 * Unsafe (TODO)         
@@ -1138,6 +1138,29 @@ class Fibonacci
         System.Console.ReadKey();
     }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Static 
+
+```csharp
+// Declare a static member, which belongs to the type itself rather than to a specific object. 
+static class CompanyEmployee
+{
+    public static void DoSomething() { /*...*/ }
+    public static void DoSomethingElse() { /*...*/  }
+}
+
+CompanyEmployee.DoSomething();
+CompanyEmployee.DoSomethingElse();
+
+class Employee
+{
+   public static string name;
+}
+
+Employee.name
 ```
 
 **[⬆ back to top](#table-of-contents)**
