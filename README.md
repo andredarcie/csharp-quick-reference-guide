@@ -102,11 +102,11 @@ const int x = 0;  // Constant fields and locals aren't variables and may not be 
 ```
 **[⬆ back to top](#table-of-contents)**
 
-## Csharp Keywords
+## Keywords
 
 ```csharp
-abstract       // Indicates that the thing being modified has a missing or incomplete implementation.
-as             // Performs certain types of conversions between compatible reference types or nullable types. 
+abstract       // Indicates that the thing being modified has a missing or incomplete implementation
+as             // Performs certain types of conversions between compatible reference types or nullable type
 base           // Access members of the base class from within a derived class
 bool           // Used to declare variables to store the Boolean values, true and false
 break          // Terminates the closest enclosing loop or switch statement in which it appears
@@ -125,8 +125,8 @@ delegate       // Type that can be used to encapsulate a named or an anonymous m
 do             // Executes a statement or a block of statements repeatedly until 
                // a specified expression evaluates to false
 double         // Simple type that stores 64-bit floating-point values
-else           // Identifies which statement to run based on the value of a Boolean expression.
-enum           // Distinct type that consists of a set of named constants called the enumerator list.
+else           // Identifies which statement to run based on the value of a Boolean expression
+enum           // Distinct type that consists of a set of named constants called the enumerator list
 event          // Used to declare an event in a publisher class
 explicit       // User-defined type conversion operator that must be invoked with a cast
 extern         // Modifier is used to declare a method that is implemented externally
@@ -138,56 +138,69 @@ for            // Run a statement or a block of statements repeatedly until
                // a specified expression evaluates to false
 foreach, in    // Repeats a group of embedded statements for each element in an array or an object collection 
 goto           // Transfers the program control directly to a labeled statement
-if             // Identifies which statement to run based on the value of a Boolean expression.
+if             // Identifies which statement to run based on the value of a Boolean expression
 implicit       // Used to declare an implicit user-defined type conversion operator
-in             // (generic modifier) 
-int            //
-interface      //
-internal       //
-is             //
-lock           //
-long           //
-namespace      //
-new            //
-null           //
-object         //
-operator       //
-out            //
-out            // (generic modifier)
-override       //
-params         //
-private        //
-protected      //
-public         //
-readonly       //
-ref            //
-return         //
-sbyte          //
-sealed         //
-short          //
-sizeof         //
-stackalloc     //
-static         //
-string         //
-struct         //
-switch         //
-this           //
-throw          //
-true           //
-try            //
-typeof         //
-uint           //
-ulong          //
-unchecked      //
-unsafe         //
-ushort         //
-using          //
-using static   //
-virtual        //
-void           //
-volatile       //
-while          //
+in             // (generic modifier) specifies that the type parameter is contravariant
+int            // Denotes an integral type
+interface      // Contains only the signatures of methods, properties, events or indexers
+internal       // Access modifier fortypes or members are accessible only within files in the same assembly
+is             // Checks if an object is compatible with a given type
+lock           // Marks a statement block as a critical section by obtaining the mutual-exclusion lock 
+               // for a given object, executing a statement, and then releasing the lock
+long           // Denotes an integral type
+namespace      // Keyword is used to declare a scope that contains a set of related objects
+new            // Keyword can be used as an operator, a modifier, or a constraint
+               // Operator - create objects and invoke constructors
+               // Modifier - hide an inherited member from a base class member
+               // Constraint - restrict types that might be used as arguments for a type parameter 
+               //              in a generic declaration
+null           // Is a literal that represents a null reference, one that does not refer to any object
+object         // All types, predefined and user-defined, reference types and value types, inherit 
+               // directly or indirectly from Object
+operator       // To overload a built-in operator or to provide a user-defined conversion in a class
+               // or struct declaration.
+out            // As a parameter modifier, which lets you pass an argument to a method by reference rather than by value.
+               // Generic type parameter declarations for interfaces and delegates, which specifies that a type parameter is covariant
+out            // (generic modifier) Enables you to use a more derived type than that specified by the generic parameter
+override       // Modifier is required to extend or modify the abstract or virtual implementation of an inherited method, property,                    // indexer, or event
+params         // You can specify a method parameter that takes a variable number of arguments
+private        // Is a member access modifier the least permissive access level
+protected      // Is a member access modifier accessible within its class and by derived class instances
+public         // Is an access modifier for types and type members, the most permissive access level
+readonly       // Assignments can only occur as part of the declaration or in a constructor in the same class
+ref            // Indicates a value that is passed by reference
+return         // Terminates execution of the method in which it appears and returns control to the calling method
+sbyte          // An integral type, signed 8-bit integer
+sealed         // Prevents other classes from inheriting from it
+short          // An integral type, signed 16-bit integer
+sizeof         // Obtain the size in bytes for an unmanaged type
+stackalloc     // Is used in an unsafe code context to allocate a block of memory on the stack
+static         // Modifier to declare a static member, which belongs to the type itself rather than to a specific object
+string         // Represents a sequence of zero or more Unicode characters
+struct         // Is a value type that is typically used to encapsulate small groups of related variables
+switch         // Is a selection statement that chooses a single switch section to execute from a 
+               // list of candidates based on a pattern match with the match expression
+this           // Refers to the current instance of the class and is also used as a modifier of 
+               // the first parameter of an extension method
+throw          // Signals the occurrence of an exception during program execution
+true           // Represents the boolean value true
+try            // Is followed by one or more catch clauses, which specify handlers for different exceptions
+typeof         // Used to obtain the System.Type object for a type
+uint           // An integral type, unsigned 32-bit integer
+ulong          // Denotes an integral type, unsigned 64-bit integer
+unchecked      // Is used to suppress overflow-checking for integral-type arithmetic operations and conversions
+unsafe         // Denotes an unsafe context, which is required for any operation involving pointers
+ushort         // An integral type, unsigned 16-bit integer
+using          // As a directive, when it is used to create an alias for a namespace or to import types defined in other namespaces
+               // As a statement, when it defines a scope at the end of which an object will be disposed
+using static   // Designates a type whose static members you can access without specifying a type name
+virtual        // Is used to modify a method, property, indexer, or event declaration and allow for it to 
+               // be overridden in a derived class
+void           // Specifies that the method doesn't return a value.
+volatile       // Indicates that a field might be modified by multiple threads that are executing at the same time
+while          // Executes a statement or a block of statements until a specified expression evaluates to false
 ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Type Conversion
