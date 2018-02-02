@@ -235,30 +235,30 @@ int intSize = sizeof(int);
 
 * Arithmetic Operators
 ```csharp
-x + y;   // Adds two operands
-x - y;   // Subtracts second operand from the first
-x * y;   // Multiplies both operands
-x / y;   // Divides numerator by de-numerator
-x % y;   // Modulus Operator and remainder of after an integer division
-x++;     // Increment operator increases integer value by one
-x--;     // Decrement operator decreases integer value by one
+x + y   // Adds two operands
+x - y   // Subtracts second operand from the first
+x * y   // Multiplies both operands
+x / y   // Divides numerator by de-numerator
+x % y   // Modulus Operator and remainder of after an integer division
+x++     // Increment operator increases integer value by one
+x--     // Decrement operator decreases integer value by one
 ```
 
 * Relational Operators
 ```csharp
-(x == y);   // Checks if the values of two operands are equal
-(x != y);   // Checks if the values of two operands are equal or not
-(x > y);    // Checks if the value of left operand is greater than the value of right operand
-(x < y);    // Checks if the value of left operand is less than the value of right operand
-(x >= y);   // Checks if the value of left operand is greater than or equal to the value of right operand
-(x <= y);   // Checks if the value of left operand is less than or equal to the value of right operand
+(x == y)   // Checks if the values of two operands are equal
+(x != y)   // Checks if the values of two operands are equal or not
+(x > y)    // Checks if the value of left operand is greater than the value of right operand
+(x < y)    // Checks if the value of left operand is less than the value of right operand
+(x >= y)   // Checks if the value of left operand is greater than or equal to the value of right operand
+(x <= y)   // Checks if the value of left operand is less than or equal to the value of right operand
 ```
 
 * Logical Operators
 ```csharp
-(x && y);   // Logical AND operator
-(x || y);   // Logical OR Operator
-!(x || y);  // Logical NOT Operator
+(x && y)   // Logical AND operator
+(x || y)   // Logical OR Operator
+!(x || y)  // Logical NOT Operator
 ```
 
 * Overload a built-in operator
