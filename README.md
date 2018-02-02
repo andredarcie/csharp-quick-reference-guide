@@ -45,7 +45,7 @@
 * [Static](#static)
 * [This](#this)   
 * [Typeof](#typeof)              
-* Unsafe (TODO)         
+* [Unsafe](#unsafe)         
 * Using static (TODO)
 * Virtual (TODO)    
 * Volatile (TODO)
@@ -1194,6 +1194,15 @@ System.Type type = typeof(int); // System.Int32
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Unsafe
+
+```csharp
+unsafe static void FastCopy(byte[] src, byte[] dst, int count)  
+{  
+    // Unsafe context: can use pointers here.  
+}  
+```
 
 ## Contributing
 
