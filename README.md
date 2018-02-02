@@ -43,7 +43,7 @@
 * [Sealed](#sealed)      
 * [Stackalloc](#stackalloc)     
 * Static (TODO)
-* This (TODO)
+* [This](#this)   
 * Typeof (TODO)              
 * Unsafe (TODO)         
 * Using static (TODO)
@@ -1137,6 +1137,28 @@ class Fibonacci
         System.Console.WriteLine("Press any key to exit.");
         System.Console.ReadKey();
     }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## This
+
+```csharp
+// Use to qualify members hidden by similar names
+public Employee(string name)
+{
+    this.name = name;
+}
+
+// Use to pass an object as a parameter to other methods
+CalcTax(this);
+
+// Use to declare indexers
+public int this[int param]
+{
+    get { return array[param]; }
+    set { array[param] = value; }
 }
 ```
 
