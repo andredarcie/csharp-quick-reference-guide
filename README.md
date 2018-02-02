@@ -44,7 +44,7 @@
 * [Stackalloc](#stackalloc)     
 * [Static](#static)
 * [This](#this)   
-* Typeof (TODO)              
+* [Typeof](#typeof)              
 * Unsafe (TODO)         
 * Using static (TODO)
 * Virtual (TODO)    
@@ -1183,6 +1183,14 @@ public int this[int param]
     get { return array[param]; }
     set { array[param] = value; }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Typeof
+
+```csharp
+System.Type type = typeof(int); // System.Int32
 ```
 
 **[⬆ back to top](#table-of-contents)**
