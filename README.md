@@ -179,7 +179,8 @@ sealed         // Prevents other classes from inheriting from it
 short          // An integral type, signed 16-bit integer
 sizeof         // Obtain the size in bytes for an unmanaged type
 stackalloc     // Is used in an unsafe code context to allocate a block of memory on the stack
-static         // Modifier to declare a static member, which belongs to the type itself rather than to a specific object
+static         // Modifier to declare a static member, which belongs to the type itself rather than 
+               // to a specific object
 string         // Represents a sequence of zero or more Unicode characters
 struct         // Is a value type that is typically used to encapsulate small groups of related variables
 switch         // Is a selection statement that chooses a single switch section to execute from a 
