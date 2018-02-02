@@ -46,7 +46,7 @@
 * [This](#this)   
 * [Typeof](#typeof)              
 * [Unsafe](#unsafe)         
-* Using static (TODO)
+* [Using static](#using-static)
 * Virtual (TODO)    
 * Volatile (TODO)
 * Generics (TODO)  
@@ -1203,6 +1203,24 @@ unsafe static void FastCopy(byte[] src, byte[] dst, int count)
     // Unsafe context: can use pointers here.  
 }  
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Using static
+
+```csharp
+using static System.Console; // Designates a type whose static members you can access without specifying a type name. 
+
+class Program 
+{ 
+    static void Main() 
+    { 
+        WriteLine("Hello world!"); // Without specifying Console
+    } 
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 
