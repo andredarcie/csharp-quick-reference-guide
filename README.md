@@ -1212,7 +1212,8 @@ unsafe static void FastCopy(byte[] src, byte[] dst, int count)
 ## Using static
 
 ```csharp
-using static System.Console; // Designates a type whose static members you can access without specifying a type name. 
+using static System.Console; // Designates a type whose static members you can
+                             // access without specifying a type name. 
 
 class Program 
 { 
