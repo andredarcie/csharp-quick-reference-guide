@@ -114,14 +114,16 @@ byte           // Denotes an integral type
 case           // Chooses a single switch section to execute from a list of candidates based on a pattern match
 catch          // Specify handlers for different exceptions
 char           // Represent a Unicode character
-checked        // Used to explicitly enable overflow checking for integral-type arithmetic operations and conversions
+checked        // Used to explicitly enable overflow checking for integral-type arithmetic 
+               // operations and conversions
 class          // Create your own custom types by grouping together variables of other types, methods and events
 const          // Declare a constant field or a constant local
 continue       // Passes control to the next iteration
 decimal        // Indicates a 128-bit data type
 default        // Can be used in the switch statement or in a default value expression
 delegate       // Type that can be used to encapsulate a named or an anonymous method
-do             // Executes a statement or a block of statements repeatedly until a specified expression evaluates to false
+do             // Executes a statement or a block of statements repeatedly until 
+               // a specified expression evaluates to false
 double         // Simple type that stores 64-bit floating-point values
 else           // Identifies which statement to run based on the value of a Boolean expression.
 enum           // Distinct type that consists of a set of named constants called the enumerator list.
@@ -132,7 +134,8 @@ false          // Represents boolean false
 finally        // Can clean up any resources that are allocated in a try block
 fixed          // Prevents the garbage collector from relocating a movable variable
 float          // Signifies a simple type that stores 32-bit floating-point values
-for            // Run a statement or a block of statements repeatedly until a specified expression evaluates to false
+for            // Run a statement or a block of statements repeatedly until 
+               // a specified expression evaluates to false
 foreach, in    // Repeats a group of embedded statements for each element in an array or an object collection 
 goto           // Transfers the program control directly to a labeled statement
 if             // Identifies which statement to run based on the value of a Boolean expression.
