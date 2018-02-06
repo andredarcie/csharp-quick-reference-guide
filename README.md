@@ -315,7 +315,8 @@ set            // Accessor method in a property or indexer that assigns a value 
 value          // Used in the set accessor in ordinary property declarations.
 var            // Variables that are declared at method scope can have an implicit "type" var
 when           // Used as catch statement of a try/catch or try/catch/finally block or label of a switch statement
-where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined                // in a generic declaration
+where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined
+               // in a generic declaration
 where          // Specify which elements from the data source will be returned in the query expression
 yield          // You indicate that the method, operator, or get accessor in which it appears is an iterator
 ```
