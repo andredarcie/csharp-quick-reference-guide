@@ -57,6 +57,7 @@
 ## By Feature
 
 * C# 2.0
+   - [Generics](generics)
    - Partial types (TODO)
    - Anonymous methods (TODO)
    - Iterators (TODO)
