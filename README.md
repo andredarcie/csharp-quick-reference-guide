@@ -79,14 +79,52 @@
    - Partial methods (TODO)
    
 * C# 4.0
-   - Dynamic binding
-   - Named and optional arguments
-   - Generic co- and contravariance
-   - Embedded interop types ("NoPIA")
+   - Dynamic binding (TODO)
+   - Named and optional arguments (TODO)
+   - Generic co- and contravariance (TODO)
+   - Embedded interop types ("NoPIA") (TODO)
    
 * C# 5.0
-   - Asynchronous methods
-   - Caller info attributes
+   - Asynchronous methods (TODO)
+   - Caller info attributes (TODO)
+
+* C# 6.0
+   - Compiler-as-a-service (Roslyn) (TODO)
+   - Import of static type members into namespace (TODO)
+   - Exception filters (TODO)
+   - Await in catch/finally blocks (TODO)
+   - Auto property initializers (TODO)
+   - Default values for getter-only properties (TODO)
+   - Expression-bodied members (TODO)
+   - Null propagator (null-conditional operator, succinct null checking) (TODO)
+   - String interpolation (TODO)
+   - nameof operator (TODO)
+   - Dictionary initializer (TODO)
+
+* C# 7.0
+   - Out variables (TODO)
+   - Pattern matching (TODO)
+   - Tuples (TODO)
+   - Deconstruction (TODO)
+   - Local functions (TODO)
+   - Digit separators (TODO)
+   - Binary literals (TODO)
+   - Ref returns and locals (TODO)
+   - Generalized async return types (TODO)
+   - Expression bodied constructors and finalizers (TODO)
+   - Expression bodied getters and setters (TODO)
+   - Throw can also be used as expression (TODO)
+
+* C# 7.1
+   - Async main (TODO)
+   - Default literal expressions (TODO)
+   - Inferred tuple element names (TODO)
+
+* C# 7.2
+   - Reference semantics with value types (TODO)
+   - Non-trailing named arguments (TODO)
+   - Leading underscores in numeric literals (TODO)
+   - private protected access modifier (TODO)
 
 **[⬆ back to top](#table-of-contents)**
 
