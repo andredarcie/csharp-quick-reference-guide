@@ -285,6 +285,40 @@ while          // Executes a statement or a block of statements until a specifie
 
 **[⬆ back to top](#table-of-contents)**
 
+## Contextual Keywords
+
+```csharp
+add            // Define a custom event accessor that is invoked when client code subscribes to your event
+alias   // Reference two versions of assemblies that have the same fully-qualified type names
+ascending      // Used in the orderby clause in query expressions to specify that the sort order is from smallest to largest
+async          // Specify that a method, lambda expression, or anonymous method is asynchronous
+await          // Applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the                    // awaited task completes
+descending     // Used in the orderby clause in query expressions to specify that the sort order is from largest to smallest
+dynamic        // Enables the operations in which it occurs to bypass compile-time type checking
+from           // A query expression must begin with a from clause
+get            // Defines an accessor method in a property or indexer that returns the property value or the indexer element
+global         // Refers to the global namespace
+group          // Sequence of IGrouping<TKey,TElement> objects that contain zero or more items that match the key value for the group
+into           // Used to create a temporary identifier to store the results of a group, join or select clause into a new identifier
+join           // Useful for associating elements from different source sequences that have no direct relationship in the object model
+let            // Useful to store the result of a sub-expression in order to use it in subsequent clauses
+nameof         // Used to obtain the simple (unqualified) string name of a variable, type, or member
+orderby        // Causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order
+partial        // (type) Allow for the definition of a class, struct, or interface to be split into multiple files
+partial        // (method) A partial method has its signature defined in one part of a partial type, and its implementation defined in                // another part of the type
+remove         // Used to define a custom event accessor that is invoked when client code unsubscribes from your event
+select         // Specifies the type of values that will be produced when the query is executed
+set            // Accessor method in a property or indexer that assigns a value to the property or the indexer element
+value          // Used in the set accessor in ordinary property declarations.
+var            // Variables that are declared at method scope can have an implicit "type" var
+when           // Used as catch statement of a try/catch or try/catch/finally block or label of a switch statement
+where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined                // in a generic declaration
+where          // Specify which elements from the data source will be returned in the query expression
+yield          // You indicate that the method, operator, or get accessor in which it appears is an iterator
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Type Conversion
 
 ```csharp
