@@ -8,6 +8,7 @@
 * [Comments](#comments)
 * [Variables](#variables)
 * [C# Keywords](#csharp-keywords)
+* [By Feature](#by-feature)
 * [Type Conversion](#type-conversion)
 * [Sizeof](#sizeof)   
 * [Operators](#operators)
@@ -52,6 +53,32 @@
 * [Generics](#generics)  
 * [Contributing](#contributing)
 * [License](#license)
+
+## By Feature
+
+* C# 2.0
+   - Partial types (TODO)
+   - Anonymous methods (TODO)
+   - Iterators (TODO)
+   - Nullable types (TODO)
+   - Getter/setter separate accessibility (TODO)
+   - Method group conversions (delegates) (TODO)
+   - Co- and Contra-variance for delegates (TODO)
+   - Static classes (TODO)
+   - Delegate inference (TODO)
+   
+* C# 3.0
+   - Implicitly typed local variables (TODO)
+   - Object and collection initializers (TODO)
+   - Auto-Implemented properties (TODO)
+   - Anonymous types (TODO)
+   - Extension methods (TODO)
+   - Query expressions (TODO)
+   - Lambda expression (TODO)
+   - Expression trees (TODO)
+   - Partial methods (TODO)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Hello World Example
 
