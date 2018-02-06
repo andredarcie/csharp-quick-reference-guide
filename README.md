@@ -8,6 +8,7 @@
 * [Comments](#comments)
 * [Variables](#variables)
 * [C# Keywords](#csharp-keywords)
+* [Contextual Keywords](#contextual-keywords)
 * [By Feature](#by-feature)
 * [Type Conversion](#type-conversion)
 * [Sizeof](#sizeof)   
@@ -57,6 +58,7 @@
 ## By Feature
 
 * C# 2.0
+   - [Generics](generics)
    - Partial types (TODO)
    - Anonymous methods (TODO)
    - Iterators (TODO)
@@ -79,14 +81,52 @@
    - Partial methods (TODO)
    
 * C# 4.0
-   - Dynamic binding
-   - Named and optional arguments
-   - Generic co- and contravariance
-   - Embedded interop types ("NoPIA")
+   - Dynamic binding (TODO)
+   - Named and optional arguments (TODO)
+   - Generic co- and contravariance (TODO)
+   - Embedded interop types ("NoPIA") (TODO)
    
 * C# 5.0
-   - Asynchronous methods
-   - Caller info attributes
+   - Asynchronous methods (TODO)
+   - Caller info attributes (TODO)
+
+* C# 6.0
+   - Compiler-as-a-service (Roslyn) (TODO)
+   - Import of static type members into namespace (TODO)
+   - Exception filters (TODO)
+   - Await in catch/finally blocks (TODO)
+   - Auto property initializers (TODO)
+   - Default values for getter-only properties (TODO)
+   - Expression-bodied members (TODO)
+   - Null propagator (null-conditional operator, succinct null checking) (TODO)
+   - String interpolation (TODO)
+   - nameof operator (TODO)
+   - Dictionary initializer (TODO)
+
+* C# 7.0
+   - Out variables (TODO)
+   - Pattern matching (TODO)
+   - Tuples (TODO)
+   - Deconstruction (TODO)
+   - Local functions (TODO)
+   - Digit separators (TODO)
+   - Binary literals (TODO)
+   - Ref returns and locals (TODO)
+   - Generalized async return types (TODO)
+   - Expression bodied constructors and finalizers (TODO)
+   - Expression bodied getters and setters (TODO)
+   - Throw can also be used as expression (TODO)
+
+* C# 7.1
+   - Async main (TODO)
+   - Default literal expressions (TODO)
+   - Inferred tuple element names (TODO)
+
+* C# 7.2
+   - Reference semantics with value types (TODO)
+   - Non-trailing named arguments (TODO)
+   - Leading underscores in numeric literals (TODO)
+   - private protected access modifier (TODO)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -242,6 +282,42 @@ virtual        // Is used to modify a method, property, indexer, or event declar
 void           // Specifies that the method doesn't return a value.
 volatile       // Indicates that a field might be modified by multiple threads that are executing at the same time
 while          // Executes a statement or a block of statements until a specified expression evaluates to false
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Contextual Keywords
+
+```csharp
+add            // Define a custom event accessor that is invoked when client code subscribes to your event
+alias          // Reference two versions of assemblies that have the same fully-qualified type names
+ascending      // Used in the orderby clause in query expressions to specify that the sort order is from smallest to largest
+async          // Specify that a method, lambda expression, or anonymous method is asynchronous
+await          // Applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the
+               // awaited task completes
+descending     // Used in the orderby clause in query expressions to specify that the sort order is from largest to smallest
+dynamic        // Enables the operations in which it occurs to bypass compile-time type checking
+from           // A query expression must begin with a from clause
+get            // Defines an accessor method in a property or indexer that returns the property value or the indexer element
+global         // Refers to the global namespace
+group          // Sequence of IGrouping<TKey,TElement> objects that contain zero or more items that match the key value for the group
+into           // Used to create a temporary identifier to store the results of a group, join or select clause into a new identifier
+join           // Useful for associating elements from different source sequences that have no direct relationship in the object model
+let            // Useful to store the result of a sub-expression in order to use it in subsequent clauses
+nameof         // Used to obtain the simple (unqualified) string name of a variable, type, or member
+orderby        // Causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order
+partial        // (type) Allow for the definition of a class, struct, or interface to be split into multiple files
+partial        // (method) A partial method has its signature defined in one part of a partial type, and its implementation defined in
+               // another part of the type
+remove         // Used to define a custom event accessor that is invoked when client code unsubscribes from your event
+select         // Specifies the type of values that will be produced when the query is executed
+set            // Accessor method in a property or indexer that assigns a value to the property or the indexer element
+value          // Used in the set accessor in ordinary property declarations.
+var            // Variables that are declared at method scope can have an implicit "type" var
+when           // Used as catch statement of a try/catch or try/catch/finally block or label of a switch statement
+where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined                // in a generic declaration
+where          // Specify which elements from the data source will be returned in the query expression
+yield          // You indicate that the method, operator, or get accessor in which it appears is an iterator
 ```
 
 **[⬆ back to top](#table-of-contents)**
