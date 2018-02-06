@@ -293,7 +293,8 @@ add            // Define a custom event accessor that is invoked when client cod
 alias          // Reference two versions of assemblies that have the same fully-qualified type names
 ascending      // Used in the orderby clause in query expressions to specify that the sort order is from smallest to largest
 async          // Specify that a method, lambda expression, or anonymous method is asynchronous
-await          // Applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the                    // awaited task completes
+await          // Applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the
+               // awaited task completes
 descending     // Used in the orderby clause in query expressions to specify that the sort order is from largest to smallest
 dynamic        // Enables the operations in which it occurs to bypass compile-time type checking
 from           // A query expression must begin with a from clause
@@ -306,7 +307,8 @@ let            // Useful to store the result of a sub-expression in order to use
 nameof         // Used to obtain the simple (unqualified) string name of a variable, type, or member
 orderby        // Causes the returned sequence or subsequence (group) to be sorted in either ascending or descending order
 partial        // (type) Allow for the definition of a class, struct, or interface to be split into multiple files
-partial        // (method) A partial method has its signature defined in one part of a partial type, and its implementation defined in                // another part of the type
+partial        // (method) A partial method has its signature defined in one part of a partial type, and its implementation defined in
+               // another part of the type
 remove         // Used to define a custom event accessor that is invoked when client code unsubscribes from your event
 select         // Specifies the type of values that will be produced when the query is executed
 set            // Accessor method in a property or indexer that assigns a value to the property or the indexer element
