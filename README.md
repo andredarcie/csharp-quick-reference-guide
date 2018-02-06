@@ -77,6 +77,16 @@
    - Lambda expression (TODO)
    - Expression trees (TODO)
    - Partial methods (TODO)
+   
+* C# 4.0
+   - Dynamic binding
+   - Named and optional arguments
+   - Generic co- and contravariance
+   - Embedded interop types ("NoPIA")
+   
+* C# 5.0
+   - Asynchronous methods
+   - Caller info attributes
 
 **[⬆ back to top](#table-of-contents)**
 
