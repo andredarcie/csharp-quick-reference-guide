@@ -8,6 +8,7 @@
 * [Comments](#comments)
 * [Variables](#variables)
 * [C# Keywords](#csharp-keywords)
+* [Contextual Keywords](#contextual-keywords)
 * [By Feature](#by-feature)
 * [Type Conversion](#type-conversion)
 * [Sizeof](#sizeof)   
@@ -289,7 +290,7 @@ while          // Executes a statement or a block of statements until a specifie
 
 ```csharp
 add            // Define a custom event accessor that is invoked when client code subscribes to your event
-alias   // Reference two versions of assemblies that have the same fully-qualified type names
+alias          // Reference two versions of assemblies that have the same fully-qualified type names
 ascending      // Used in the orderby clause in query expressions to specify that the sort order is from smallest to largest
 async          // Specify that a method, lambda expression, or anonymous method is asynchronous
 await          // Applied to a task in an asynchronous method to insert a suspension point in the execution of the method until the                    // awaited task completes
