@@ -59,7 +59,7 @@
 
 * C# 2.0
    - [Generics](#generics)
-   - Partial types (TODO)
+   - [Partial types](#partial-types)
    - Anonymous methods (TODO)
    - Iterators (TODO)
    - Nullable types (TODO)
@@ -1447,6 +1447,36 @@ class TestGenericList
         GenericList<ExampleClass> list3 = new GenericList<ExampleClass>();
     }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Partial Types 
+
+```csharp
+// Declare first partial class
+public partial class MyClass
+{
+    int x;
+}
+
+// Declare second partial class
+public partial class MyClass
+{
+    int y;
+}
+
+// Declare third partial class
+public partial class MyClass
+{
+    public MyClass()
+    {
+          this.x = 10;
+          this.y = 20;
+    }
+}
+
+// The three partials will generate just one class after compiled
 ```
 
 **[⬆ back to top](#table-of-contents)**
