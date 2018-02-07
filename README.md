@@ -60,7 +60,7 @@
 * C# 2.0
    - [Generics](#generics)
    - [Partial types](#partial-types)
-   - Anonymous methods (TODO)
+   - [Anonymous methods](#anonymous-methods)
    - Iterators (TODO)
    - Nullable types (TODO)
    - Getter/setter separate accessibility (TODO)
@@ -1477,6 +1477,26 @@ public partial class MyClass
 }
 
 // The three partials will generate just one class after compiled
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Anonymous methods
+
+```csharp
+// Declare a delegate.
+delegate void Printer(string s);
+
+// Instantiate the delegate type using an anonymous method.
+Printer p = delegate(string j)
+{
+   System.Console.WriteLine(j);
+};
+
+// Results from the anonymous delegate call.
+p("The delegate using the anonymous method is called.");
+
+// Output: The delegate using the anonymous method is called.
 ```
 
 **[⬆ back to top](#table-of-contents)**
