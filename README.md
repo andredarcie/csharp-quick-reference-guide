@@ -63,7 +63,7 @@
    - [Anonymous methods](#anonymous-methods)
    - Iterators (TODO)
    - Nullable types (TODO)
-   - Getter/setter separate accessibility (TODO)
+   - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - Method group conversions (delegates) (TODO)
    - Co- and Contra-variance for delegates (TODO)
    - Static classes (TODO)
@@ -1498,6 +1498,19 @@ Printer p = delegate(string j)
 p("The delegate using the anonymous method is called.");
 
 // Output: The delegate using the anonymous method is called.
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Getter and setter separate accessibility
+
+```csharp
+// Different accessibility on get and set accessors using accessor-modifier
+class Customer
+
+{
+   public string Name { get; protected set; }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
