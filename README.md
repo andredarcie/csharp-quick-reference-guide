@@ -1507,10 +1507,8 @@ p("The delegate using the anonymous method is called.");
 ## Getter and setter separate accessibility
 
 ```csharp
-// Different accessibility on get and set accessors using accessor-modifier
 class Customer
-
-{
+{ // Different accessibility on get and set accessors using accessor-modifier
    public string Name { get; protected set; }
 }
 ```
