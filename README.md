@@ -161,19 +161,21 @@ comments */
 ## Variables
 
 ```csharp
-bool bo = true;   // True or false
-byte by = 255;    // 0 to 255
-char ch = 'a';    // U +0000 to U +ffff
-decimal de = 1m;  // 128-bit precise decimal values
-double do = 1d;   // 64-bit double-precision floating point type
-float fl = 1f;    // 32-bit single-precision floating point type
-int in = 1;       // -2,147,483,648 to 2,147,483,647
-long lo = 1l;     // 64-bit signed integer type
-sbyte sb = 1;     // -128 to 127
-short sh = 1;     // -32,768 to 32,767
-uint ui = 1;      // 0 to 4,294,967,295
-ulong ul = 1;     // 0 to 18,446,744,073,709,551,615
-ushort us = 1;    // 0 to 65,535
+bool bo = true;    // True or false                                  System.Boolean
+byte by = 255;     // 0 to 255                                       System.Byte
+char ch = 'a';     // U +0000 to U +ffff                             System.Char
+decimal de = 1m;   // 128-bit precise decimal values                 System.Decimal
+double do = 1d;    // 64-bit double-precision floating point type    System.Double
+float fl = 1f;     // 32-bit single-precision floating point type    System.Single
+int in = 1;        // -2,147,483,648 to 2,147,483,647                System.Int32
+long lo = 1l;      // 64-bit signed integer type                     System.Int64
+sbyte sb = 1;      // -128 to 127                                    System.SByte
+short sh = 1;      // -32,768 to 32,767                              System.Int16
+uint ui = 1;       // 0 to 4,294,967,295                             System.UInt32
+ulong ul = 1;      // 0 to 18,446,744,073,709,551,615                System.UInt64
+ushort us = 1;     // 0 to 65,535                                    System.UInt16
+string st = "test" // sequence of zero or more Unicode characters    System.String
+object ob = test   // any type                                       System.Object
 
 const int x = 0;  // Constant fields and locals aren't variables and may not be modified
 ```
