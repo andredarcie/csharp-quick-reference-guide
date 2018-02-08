@@ -37,8 +37,7 @@
 * [Implicit](#implicit)      
 * [Access Modifiers](#access-modifiers)
 * [Is](#is)
-* [Lock](#lock)
-* [Object](#object)         
+* [Lock](#lock)     
 * [Override](#override)   
 * [Readonly](#readonly)
 * [Method Parameters](#method-parameters)
@@ -1080,21 +1079,6 @@ class Account
         }  
     }  
 } 
-```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Object
-
-```csharp
-// All types, predefined and user-defined, reference types and value types, 
-// inherit directly or indirectly from Object
-// You can assign values of any type to variables of type object
-
-object bo = true;   // True or false
-object by = 255;    // 0 to 255
-object ch = 'a';    // U +0000 to U +ffff
-object de = 1m;  // 128-bit precise decimal values
 ```
 
 **[⬆ back to top](#table-of-contents)**
