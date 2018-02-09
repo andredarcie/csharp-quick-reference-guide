@@ -37,8 +37,7 @@
 * [Implicit](#implicit)      
 * [Access Modifiers](#access-modifiers)
 * [Is](#is)
-* [Lock](#lock)
-* [Object](#object)         
+* [Lock](#lock)     
 * [Override](#override)   
 * [Readonly](#readonly)
 * [Method Parameters](#method-parameters)
@@ -161,19 +160,21 @@ comments */
 ## Variables
 
 ```csharp
-bool bo = true;   // True or false
-byte by = 255;    // 0 to 255
-char ch = 'a';    // U +0000 to U +ffff
-decimal de = 1m;  // 128-bit precise decimal values
-double do = 1d;   // 64-bit double-precision floating point type
-float fl = 1f;    // 32-bit single-precision floating point type
-int in = 1;       // -2,147,483,648 to 2,147,483,647
-long lo = 1l;     // 64-bit signed integer type
-sbyte sb = 1;     // -128 to 127
-short sh = 1;     // -32,768 to 32,767
-uint ui = 1;      // 0 to 4,294,967,295
-ulong ul = 1;     // 0 to 18,446,744,073,709,551,615
-ushort us = 1;    // 0 to 65,535
+bool bo = true;    // True or false                                  System.Boolean
+byte by = 255;     // 0 to 255                                       System.Byte
+char ch = 'a';     // U +0000 to U +ffff                             System.Char
+decimal de = 1m;   // 128-bit precise decimal values                 System.Decimal
+double do = 1d;    // 64-bit double-precision floating point type    System.Double
+float fl = 1f;     // 32-bit single-precision floating point type    System.Single
+int in = 1;        // -2,147,483,648 to 2,147,483,647                System.Int32
+long lo = 1l;      // 64-bit signed integer type                     System.Int64
+sbyte sb = 1;      // -128 to 127                                    System.SByte
+short sh = 1;      // -32,768 to 32,767                              System.Int16
+uint ui = 1;       // 0 to 4,294,967,295                             System.UInt32
+ulong ul = 1;      // 0 to 18,446,744,073,709,551,615                System.UInt64
+ushort us = 1;     // 0 to 65,535                                    System.UInt16
+string st = "test" // sequence of zero or more Unicode characters    System.String
+object ob = test   // any type                                       System.Object
 
 const int x = 0;  // Constant fields and locals aren't variables and may not be modified
 ```
@@ -315,7 +316,8 @@ set            // Accessor method in a property or indexer that assigns a value 
 value          // Used in the set accessor in ordinary property declarations.
 var            // Variables that are declared at method scope can have an implicit "type" var
 when           // Used as catch statement of a try/catch or try/catch/finally block or label of a switch statement
-where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined                // in a generic declaration
+where          // (generic type constraint) Specify constraints on the types that can be used as arguments for a type parameter defined
+               // in a generic declaration
 where          // Specify which elements from the data source will be returned in the query expression
 yield          // You indicate that the method, operator, or get accessor in which it appears is an iterator
 ```
@@ -1081,21 +1083,6 @@ class Account
 
 **[⬆ back to top](#table-of-contents)**
 
-## Object
-
-```csharp
-// All types, predefined and user-defined, reference types and value types, 
-// inherit directly or indirectly from Object
-// You can assign values of any type to variables of type object
-
-object bo = true;   // True or false
-object by = 255;    // 0 to 255
-object ch = 'a';    // U +0000 to U +ffff
-object de = 1m;  // 128-bit precise decimal values
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Override
 
 ```csharp
@@ -1504,10 +1491,8 @@ p("The delegate using the anonymous method is called.");
 ## Getter and setter separate accessibility
 
 ```csharp
-// Different accessibility on get and set accessors using accessor-modifier
 class Customer
-
-{
+{ // Different accessibility on get and set accessors using accessor-modifier
    public string Name { get; protected set; }
 }
 ```
