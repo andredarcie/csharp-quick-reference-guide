@@ -65,7 +65,7 @@
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - Method group conversions (delegates) (TODO)
    - Co- and Contra-variance for delegates (TODO)
-   - Static classes (TODO)
+   - [Static classes](#static-classes)
    - Delegate inference (TODO)
    
 * C# 3.0
@@ -1494,6 +1494,19 @@ p("The delegate using the anonymous method is called.");
 class Customer
 { // Different accessibility on get and set accessors using accessor-modifier
    public string Name { get; protected set; }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Static Classes
+
+```csharp
+//a static class cannot be instantiated
+public static class Converter
+{ 
+   public double Celsius { get; set; }
+   public double Fahrenheit  { get; set; }
 }
 ```
 
