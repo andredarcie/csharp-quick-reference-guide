@@ -63,7 +63,7 @@
    - Iterators (TODO)
    - Nullable types (TODO)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
-   - Method group conversions (delegates) (TODO)
+   - [Method group conversions (delegates)](#method-group-conversions)
    - Co- and Contra-variance for delegates (TODO)
    - [Static classes](#static-classes)
    - Delegate inference (TODO)
@@ -1495,6 +1495,16 @@ class Customer
 { // Different accessibility on get and set accessors using accessor-modifier
    public string Name { get; protected set; }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Method group conversions
+
+```csharp
+// suppose we have a method called RemoveSpaces(string s) and a delegate called Del
+// to assign a method to the delegate:
+Del d = RemoveSpaces;
 ```
 
 **[⬆ back to top](#table-of-contents)**
