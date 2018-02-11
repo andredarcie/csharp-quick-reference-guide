@@ -66,8 +66,8 @@
    - [Method group conversions (delegates)](#method-group-conversions)
    - Co- and Contra-variance for delegates (TODO)
    - [Static classes](#static-classes)
-   - Delegate inference (TODO)
-   
+   - [Delegate inference](#delegate-inference)
+  -
 * C# 3.0
    - Implicitly typed local variables (TODO)
    - Object and collection initializers (TODO)
@@ -1518,6 +1518,16 @@ public static class Converter
    public double Celsius { get; set; }
    public double Fahrenheit  { get; set; }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Delegate inference
+
+```csharp
+//create a delegate instance without the new keyword part
+delegate void SomeAction();
+SomeAction newStyle = SayHello;
 ```
 
 **[⬆ back to top](#table-of-contents)**
