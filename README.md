@@ -67,7 +67,7 @@
    - Co- and Contra-variance for delegates (TODO)
    - [Static classes](#static-classes)
    - [Delegate inference](#delegate-inference)
-  -
+
 * C# 3.0
    - Implicitly typed local variables (TODO)
    - Object and collection initializers (TODO)
