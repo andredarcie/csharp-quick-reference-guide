@@ -61,7 +61,7 @@
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
    - Iterators (TODO)
-   - Nullable types (TODO)
+   - [Nullable types](#nullable-types)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
    - Co- and Contra-variance for delegates (TODO)
@@ -1484,6 +1484,17 @@ Printer p = delegate(string j)
 p("The delegate using the anonymous method is called.");
 
 // Output: The delegate using the anonymous method is called.
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Nullable types
+
+```csharp
+int? variableName = null;
+double? variableName = null;
+bool? variableName = null;
+int?[] arr = new int?[10];
 ```
 
 **[⬆ back to top](#table-of-contents)**
