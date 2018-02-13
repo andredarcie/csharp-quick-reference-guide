@@ -60,7 +60,7 @@
    - [Generics](#generics)
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
-   - Iterators (TODO)
+   - [Iterators](#iterators)
    - [Nullable types](#nullable-types)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
@@ -1484,6 +1484,32 @@ Printer p = delegate(string j)
 p("The delegate using the anonymous method is called.");
 
 // Output: The delegate using the anonymous method is called.
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Iterators
+
+```csharp
+class Department
+{
+   private List<Employees> _employees;
+   
+   public IEnumerator<Employees> GetEnumerator()
+   {
+      foreach (Employees emp in _employees)
+      yield return emp;
+   }
+}
+
+static void Main(string[] args)
+{
+   Department dept = new Department("MyDepartment");
+   foreach (Employees emp in dept)
+   {
+      //...
+   }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
