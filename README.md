@@ -60,11 +60,11 @@
    - [Generics](#generics)
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
-   - Iterators (TODO)
+   - [Iterators](#iterators)
    - [Nullable types](#nullable-types)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
-   - Co- and Contra-variance for delegates (TODO)
+   - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
    - [Static classes](#static-classes)
    - [Delegate inference](#delegate-inference)
 
@@ -1488,6 +1488,32 @@ p("The delegate using the anonymous method is called.");
 
 **[⬆ back to top](#table-of-contents)**
 
+## Iterators
+
+```csharp
+class Department
+{
+   private List<Employees> _employees;
+   
+   public IEnumerator<Employees> GetEnumerator()
+   {
+      foreach (Employees emp in _employees)
+      yield return emp;
+   }
+}
+
+static void Main(string[] args)
+{
+   Department dept = new Department("MyDepartment");
+   foreach (Employees emp in dept)
+   {
+      //...
+   }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Nullable types
 
 ```csharp
@@ -1518,8 +1544,30 @@ class Customer
 Del d = RemoveSpaces;
 ```
 
+## Covariance and Contravariance for delegates
+
+```csharp
+static object GetObject() { return null; }
+static void SetObject(object obj) { }
+
+static string GetString() { return “”; }
+static void SetString(string str) { }
+
+// Covariance. A delegate specifies a return type as object,
+// but I can assign a method that returns a string.
+Func<object> del = GetString;
+
+// Contravariance. A delegate specifies a parameter type as string,
+// but I can assign a method that takes an object.
+Action<string> del2 = SetObject;
+```
+
 **[⬆ back to top](#table-of-contents)**
 
+
+// Covariance. A delegate specifies a return type as object,
+    // but I can assign a method that returns a string.
+    Func<object> del = GetString;
 ## Static Classes
 
 ```csharp
