@@ -69,7 +69,7 @@
    - [Delegate inference](#delegate-inference)
 
 * C# 3.0
-   - Implicitly typed local variables (TODO)
+   - [Implicitly typed local variables](#implicitly-typed-local-variables)
    - Object and collection initializers (TODO)
    - Auto-Implemented properties (TODO)
    - Anonymous types (TODO)
@@ -1587,6 +1587,33 @@ public static class Converter
 //create a delegate instance without the new keyword part
 delegate void SomeAction();
 SomeAction newStyle = SayHello;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Implicitly typed local variables
+
+```csharp
+// compiled as an int
+var foo = 5;
+
+// compiled as a string
+var foo = "Hello";
+
+// compiled as int[]
+var foo = new[] { 0, 1, 2 };
+
+// expr is compiled as IEnumerable<Customer> or perhaps IQueryable<Customer>
+var foo =
+    from c in customers
+    where c.City == "London"
+    select c;
+
+// compiled as an anonymous type
+var foo = new { Name = "Terry", Age = 34 };
+
+// compiled as List<int>                             
+var foo = new List<int>();
 ```
 
 **[⬆ back to top](#table-of-contents)**
