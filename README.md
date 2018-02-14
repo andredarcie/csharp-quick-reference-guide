@@ -61,7 +61,7 @@
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
    - [Iterators](#iterators)
-   - [Nullable types](#nullable-types)
+   - [Nullable types](#nullables)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
    - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
@@ -597,6 +597,11 @@ namespace CalculatorApplication
 ```csharp
 int? x = null;
 int? y = 2;
+
+int? variableName = null;
+double? variableName = null;
+bool? variableName = null;
+int?[] arr = new int?[10];
 
 var z = x ?? 10; // Null Coalescing Operator
 ```
@@ -1510,17 +1515,6 @@ static void Main(string[] args)
       //...
    }
 }
-```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Nullable types
-
-```csharp
-int? variableName = null;
-double? variableName = null;
-bool? variableName = null;
-int?[] arr = new int?[10];
 ```
 
 **[⬆ back to top](#table-of-contents)**
