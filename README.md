@@ -70,7 +70,7 @@
 
 * C# 3.0
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
-   - Object and collection initializers (TODO)
+   - [Object and collection initializers](#object-and-collection-initializers)
    - Auto-Implemented properties (TODO)
    - Anonymous types (TODO)
    - Extension methods (TODO)
@@ -1614,6 +1614,32 @@ var foo = new { Name = "Terry", Age = 34 };
 
 // compiled as List<int>                             
 var foo = new List<int>();
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Object and collection initializers
+
+```csharp
+// Object initializer
+class Customer
+{
+   public string Name { get; set; }
+   public int Age { get; set; } 
+}
+
+Customer foo = new Customer { Name = "Spock", Age = 21 };
+
+// Anonymous object initializer
+var bar = new  { Name = "Spock", Age = 21 }; 
+
+// Collection initializer
+List<Customer> foos = new List<Customer>
+{
+    new Customer { Name = "John", Age = 21 };
+    new Customer { Name = "Ringo", Age = 32 };
+    new Customer { Name = "Paul", Age = 43 };
+};
 ```
 
 **[⬆ back to top](#table-of-contents)**
