@@ -71,7 +71,7 @@
 * C# 3.0
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
    - [Object and collection initializers](#object-and-collection-initializers)
-   - Auto-Implemented properties (TODO)
+   - [Auto-Implemented properties](#auto-implemented-properties)
    - Anonymous types (TODO)
    - Extension methods (TODO)
    - Query expressions (TODO)
@@ -1640,6 +1640,19 @@ List<Customer> foos = new List<Customer>
     new Customer { Name = "Ringo", Age = 32 };
     new Customer { Name = "Paul", Age = 43 };
 };
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Auto-Implemented properties
+
+```csharp
+class Customer
+{
+    // Auto-Implemented properties for trivial get and set 
+   public int CustomerID { get; set; }
+   public string Name { get; set; }   
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
