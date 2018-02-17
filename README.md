@@ -65,7 +65,7 @@
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
    - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
-   - [Static classes](#static-classes)
+   - [Static classes](#static)
    - [Delegate inference](#delegate-inference)
 
 * C# 3.0
@@ -1554,19 +1554,6 @@ Func<object> del = GetString;
 // Contravariance. A delegate specifies a parameter type as string,
 // but I can assign a method that takes an object.
 Action<string> del2 = SetObject;
-```
-
-**[⬆ back to top](#table-of-contents)**
-
-## Static Classes
-
-```csharp
-//a static class cannot be instantiated
-public static class Converter
-{ 
-   public double Celsius { get; set; }
-   public double Fahrenheit  { get; set; }
-}
 ```
 
 **[⬆ back to top](#table-of-contents)**
