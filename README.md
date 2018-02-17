@@ -56,7 +56,7 @@
 
 ## By Feature
 
-### CSharp 2.0
+* <a name="csharp-2"></a>C# 2.0
    - [Generics](#generics)
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
@@ -1417,7 +1417,7 @@ class VolatileTest
 **[⬆ back to top](#table-of-contents)**
 
 ## Generics 
-<sup>[[C# 2.0](#csharp-2.0)]</sup>
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 // Declare the generic class.
 public class GenericList<T>
