@@ -1496,6 +1496,7 @@ p("The delegate using the anonymous method is called.");
 ## Iterators
 
 ```csharp
+// Iterator can be used to step through collections such as lists and arrays
 class Department
 {
    private List<Employees> _employees;
