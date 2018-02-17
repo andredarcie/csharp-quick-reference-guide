@@ -73,7 +73,7 @@
    - [Object and collection initializers](#object-and-collection-initializers)
    - [Auto-Implemented properties](#auto-implemented-properties)
    - [Anonymous types](#anonymous-types)
-   - Extension methods (TODO)
+   - [Extension methods](extension-methods)
    - Query expressions (TODO)
    - Lambda expression (TODO)
    - Expression trees (TODO)
@@ -1651,6 +1651,31 @@ var productQuery =
     from prod in products
     select new { prod.Color, prod.Price };
 
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Extension Methods
+
+```csharp
+// Extension methods enable you to "add" methods to existing types without 
+// creating a new derived type, recompiling, or otherwise modifying the original type
+
+namespace ExtensionMethods
+{
+    public static class MyExtensions
+    {
+        public static int WordCount(this String str)
+        {
+            return str.Split(new char[] { ' ', '.', '?' }, 
+                             StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+    }   
+}
+
+string s = "Hello Extension Methods"; 
+// Extension methods are defined as static methods but are called by using instance method syntax
+int i = s.WordCount();  
 ```
 
 **[⬆ back to top](#table-of-contents)**
