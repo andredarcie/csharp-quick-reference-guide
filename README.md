@@ -73,7 +73,7 @@
    - [Object and collection initializers](#object-and-collection-initializers)
    - [Auto-Implemented properties](#auto-implemented-properties)
    - [Anonymous types](#anonymous-types)
-   - [Extension methods](extension-methods)
+   - [Extension methods](#extension-methods)
    - Query expressions (TODO)
    - Lambda expression (TODO)
    - Expression trees (TODO)
