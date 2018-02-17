@@ -1416,8 +1416,8 @@ class VolatileTest
 
 **[⬆ back to top](#table-of-contents)**
 
-## Generics <sup>[[C# 2.0](#csharp-2.0)]</sup>
-
+## Generics 
+<sup>[[C# 2.0](#csharp-2.0)]</sup>
 ```csharp
 // Declare the generic class.
 public class GenericList<T>
