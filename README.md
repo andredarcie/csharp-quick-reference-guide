@@ -72,7 +72,7 @@
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
    - [Object and collection initializers](#object-and-collection-initializers)
    - [Auto-Implemented properties](#auto-implemented-properties)
-   - Anonymous types (TODO)
+   - [Anonymous types](#anonymous-types)
    - Extension methods (TODO)
    - Query expressions (TODO)
    - Lambda expression (TODO)
@@ -1630,6 +1630,26 @@ class Customer
    public int CustomerID { get; set; }
    public string Name { get; set; }   
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Anonymous Types
+
+```csharp
+// Anonymous types provide a convenient way to encapsulate a set of read-only 
+// properties into a single object without having to explicitly define a type first
+
+var v = new { Amount = 108, Message = "Hello" };  
+Console.WriteLine(v.Amount + v.Message);  
+
+// Anonymous types typically are used in the select clause of a query expression 
+// to return a subset of the properties from each object in the source sequence
+
+var productQuery = 
+    from prod in products
+    select new { prod.Color, prod.Price };
+
 ```
 
 **[⬆ back to top](#table-of-contents)**
