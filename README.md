@@ -1558,10 +1558,6 @@ Action<string> del2 = SetObject;
 
 **[⬆ back to top](#table-of-contents)**
 
-
-// Covariance. A delegate specifies a return type as object,
-    // but I can assign a method that returns a string.
-    Func<object> del = GetString;
 ## Static Classes
 
 ```csharp
