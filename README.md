@@ -56,7 +56,7 @@
 
 ## By Feature
 
-* CSharp 2.0
+### CSharp 2.0
    - [Generics](#generics)
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
