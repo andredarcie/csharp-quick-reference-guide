@@ -56,40 +56,40 @@
 
 ## By Feature
 
-* C# 2.0
+* <a name="csharp-2"></a>C# 2.0
    - [Generics](#generics)
    - [Partial types](#partial-types)
    - [Anonymous methods](#anonymous-methods)
    - [Iterators](#iterators)
-   - [Nullable types](#nullable-types)
+   - [Nullable types](#nullables)
    - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
    - [Method group conversions (delegates)](#method-group-conversions)
    - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
-   - [Static classes](#static-classes)
+   - [Static classes](#static)
    - [Delegate inference](#delegate-inference)
 
-* C# 3.0
+* <a name="csharp-3"></a>C# 3.0
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
    - [Object and collection initializers](#object-and-collection-initializers)
    - [Auto-Implemented properties](#auto-implemented-properties)
-   - Anonymous types (TODO)
-   - Extension methods (TODO)
+   - [Anonymous types](#anonymous-types)
+   - [Extension methods](#extension-methods)
    - Query expressions (TODO)
    - Lambda expression (TODO)
    - Expression trees (TODO)
    - Partial methods (TODO)
    
-* C# 4.0
+* <a name="csharp-4"></a>C# 4.0
    - Dynamic binding (TODO)
    - Named and optional arguments (TODO)
    - Generic co- and contravariance (TODO)
    - Embedded interop types ("NoPIA") (TODO)
    
-* C# 5.0
+* <a name="csharp-5"></a>C# 5.0
    - Asynchronous methods (TODO)
    - Caller info attributes (TODO)
 
-* C# 6.0
+* <a name="csharp-6"></a>C# 6.0
    - Compiler-as-a-service (Roslyn) (TODO)
    - Import of static type members into namespace (TODO)
    - Exception filters (TODO)
@@ -102,7 +102,7 @@
    - nameof operator (TODO)
    - Dictionary initializer (TODO)
 
-* C# 7.0
+* <a name="csharp-7"></a>C# 7.0
    - Out variables (TODO)
    - Pattern matching (TODO)
    - Tuples (TODO)
@@ -116,12 +116,12 @@
    - Expression bodied getters and setters (TODO)
    - Throw can also be used as expression (TODO)
 
-* C# 7.1
+* <a name="csharp-71"></a>C# 7.1
    - Async main (TODO)
    - Default literal expressions (TODO)
    - Inferred tuple element names (TODO)
 
-* C# 7.2
+* <a name="csharp-72"></a>C# 7.2
    - Reference semantics with value types (TODO)
    - Non-trailing named arguments (TODO)
    - Leading underscores in numeric literals (TODO)
@@ -597,6 +597,11 @@ namespace CalculatorApplication
 ```csharp
 int? x = null;
 int? y = 2;
+
+int? variableName = null;
+double? variableName = null;
+bool? variableName = null;
+int?[] arr = new int?[10];
 
 var z = x ?? 10; // Null Coalescing Operator
 ```
@@ -1412,7 +1417,7 @@ class VolatileTest
 **[⬆ back to top](#table-of-contents)**
 
 ## Generics 
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 // Declare the generic class.
 public class GenericList<T>
@@ -1439,7 +1444,7 @@ class TestGenericList
 **[⬆ back to top](#table-of-contents)**
 
 ## Partial Types 
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 // Declare first partial class
 public partial class MyClass
@@ -1469,7 +1474,7 @@ public partial class MyClass
 **[⬆ back to top](#table-of-contents)**
 
 ## Anonymous methods
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 // Declare a delegate.
 delegate void Printer(string s);
@@ -1489,8 +1494,9 @@ p("The delegate using the anonymous method is called.");
 **[⬆ back to top](#table-of-contents)**
 
 ## Iterators
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
+// Iterator can be used to step through collections such as lists and arrays
 class Department
 {
    private List<Employees> _employees;
@@ -1514,19 +1520,8 @@ static void Main(string[] args)
 
 **[⬆ back to top](#table-of-contents)**
 
-## Nullable types
-
-```csharp
-int? variableName = null;
-double? variableName = null;
-bool? variableName = null;
-int?[] arr = new int?[10];
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Getter and setter separate accessibility
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 class Customer
 { // Different accessibility on get and set accessors using accessor-modifier
@@ -1537,7 +1532,7 @@ class Customer
 **[⬆ back to top](#table-of-contents)**
 
 ## Method group conversions
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 // suppose we have a method called RemoveSpaces(string s) and a delegate called Del
 // to assign a method to the delegate:
@@ -1545,7 +1540,7 @@ Del d = RemoveSpaces;
 ```
 
 ## Covariance and Contravariance for delegates
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 static object GetObject() { return null; }
 static void SetObject(object obj) { }
@@ -1564,25 +1559,8 @@ Action<string> del2 = SetObject;
 
 **[⬆ back to top](#table-of-contents)**
 
-
-// Covariance. A delegate specifies a return type as object,
-    // but I can assign a method that returns a string.
-    Func<object> del = GetString;
-## Static Classes
-
-```csharp
-//a static class cannot be instantiated
-public static class Converter
-{ 
-   public double Celsius { get; set; }
-   public double Fahrenheit  { get; set; }
-}
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Delegate inference
-
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 //create a delegate instance without the new keyword part
 delegate void SomeAction();
@@ -1592,7 +1570,7 @@ SomeAction newStyle = SayHello;
 **[⬆ back to top](#table-of-contents)**
 
 ## Implicitly typed local variables
-
+<sup>[[C# 3.0](#csharp-3)]</sup>
 ```csharp
 // compiled as an int
 var foo = 5;
@@ -1619,7 +1597,7 @@ var foo = new List<int>();
 **[⬆ back to top](#table-of-contents)**
 
 ## Object and collection initializers
-
+<sup>[[C# 3.0](#csharp-3)]</sup>
 ```csharp
 // Object initializer
 class Customer
@@ -1645,7 +1623,7 @@ List<Customer> foos = new List<Customer>
 **[⬆ back to top](#table-of-contents)**
 
 ## Auto-Implemented properties
-
+<sup>[[C# 3.0](#csharp-3)]</sup>
 ```csharp
 class Customer
 {
@@ -1653,6 +1631,51 @@ class Customer
    public int CustomerID { get; set; }
    public string Name { get; set; }   
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Anonymous Types
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// Anonymous types provide a convenient way to encapsulate a set of read-only 
+// properties into a single object without having to explicitly define a type first
+
+var v = new { Amount = 108, Message = "Hello" };  
+Console.WriteLine(v.Amount + v.Message);  
+
+// Anonymous types typically are used in the select clause of a query expression 
+// to return a subset of the properties from each object in the source sequence
+
+var productQuery = 
+    from prod in products
+    select new { prod.Color, prod.Price };
+
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Extension Methods
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// Extension methods enable you to "add" methods to existing types without 
+// creating a new derived type, recompiling, or otherwise modifying the original type
+
+namespace ExtensionMethods
+{
+    public static class MyExtensions
+    {
+        public static int WordCount(this String str)
+        {
+            return str.Split(new char[] { ' ', '.', '?' }, 
+                             StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+    }   
+}
+
+string s = "Hello Extension Methods"; 
+// Extension methods are defined as static methods but are called by using instance method syntax
+int i = s.WordCount();  
 ```
 
 **[⬆ back to top](#table-of-contents)**
