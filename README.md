@@ -77,7 +77,7 @@
    - Query expressions (TODO)
    - Lambda expression (TODO)
    - Expression trees (TODO)
-   - Partial methods (TODO)
+   - [Partial methods](#partial-methods)
    
 * <a name="csharp-4"></a>C# 4.0
    - Dynamic binding (TODO)
@@ -1680,6 +1680,29 @@ int i = s.WordCount();
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Partial methods
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+ partial class MyClass
+ {
+     partial void OnSomethingHappened(string s);
+ }
+
+ // This part can be in a separate file.
+ partial class MyClass
+ {
+     // Comment out this method and the program
+     // will still compile.
+     partial void OnSomethingHappened(String s)
+     {
+         Console.WriteLine("Something happened: {0}", s);
+     }
+ }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 
 ## Contributing
 
