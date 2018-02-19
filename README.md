@@ -594,6 +594,7 @@ namespace CalculatorApplication
 **[⬆ back to top](#table-of-contents)**
 
 ## Nullables
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 int? x = null;
 int? y = 2;
