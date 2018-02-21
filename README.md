@@ -74,7 +74,7 @@
    - [Auto-Implemented properties](#auto-implemented-properties)
    - [Anonymous types](#anonymous-types)
    - [Extension methods](#extension-methods)
-   - Query expressions (TODO)
+   - [Query expressions](#query-expressions)
    - Lambda expression (TODO)
    - Expression trees (TODO)
    - [Partial methods](#partial-methods)
@@ -1703,6 +1703,30 @@ int i = s.WordCount();
 
 **[⬆ back to top](#table-of-contents)**
 
+## Query expressions
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// A query is a set of instructions that describes what data to retrieve from a given 
+// data source (or sources) and what shape and organization the returned data should have.
+
+// Data source.
+int[] scores = { 90, 71, 82, 93, 75, 82 };
+
+// Query Expression.
+IEnumerable<int> scoreQuery = //query variable
+  from score in scores //required
+  where score > 80 // optional
+  orderby score descending // optional
+  select score; //must end with select or group
+
+// Execute the query to produce the results
+foreach (int testScore in scoreQuery)
+{
+  Console.WriteLine(testScore);
+}                  
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 
