@@ -1,4 +1,4 @@
-# C# Guide
+# C# Quick Reference Guide
 
 > Discovering csharp through code samples. 😉
 
