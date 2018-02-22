@@ -76,7 +76,7 @@
    - [Extension methods](#extension-methods)
    - [Query expressions](#query-expressions)
    - Lambda expression (TODO)
-   - Expression trees (TODO)
+   - [Expression trees](#expression-trees)
    - [Partial methods](#partial-methods)
    
 * <a name="csharp-4"></a>C# 4.0
@@ -1677,6 +1677,21 @@ namespace ExtensionMethods
 string s = "Hello Extension Methods"; 
 // Extension methods are defined as static methods but are called by using instance method syntax
 int i = s.WordCount();  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Expression trees
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// Create an expression using expression lambda
+Expression<Func<int, int, int>> expression = (num1, num2) => num1 + num2;
+ 
+// Compile the expression
+Func<int, int, int> compiledExpression = expression.Compile();
+ 
+// Execute the expression. 
+int result = compiledExpression(3, 4); //return 7
 ```
 
 **[⬆ back to top](#table-of-contents)**
