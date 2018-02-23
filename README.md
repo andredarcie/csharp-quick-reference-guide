@@ -75,7 +75,7 @@
    - [Anonymous types](#anonymous-types)
    - [Extension methods](#extension-methods)
    - [Query expressions](#query-expressions)
-   - Lambda expression (TODO)
+   - [Lambda expressions](#lambda-expressions)
    - [Expression trees](#expression-trees)
    - [Partial methods](#partial-methods)
    
@@ -1677,6 +1677,23 @@ namespace ExtensionMethods
 string s = "Hello Extension Methods"; 
 // Extension methods are defined as static methods but are called by using instance method syntax
 int i = s.WordCount();  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Lambda expressions
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// A lambda expression is an anonymous function that you
+// can use to create delegates or expression tree types.
+delegate int del(int i);
+static void Main(string[] args)
+{
+    del myDelegate = x => x * x;
+    int j = myDelegate(5); //j = 25
+    
+    Expression<del> myET = x => x * x;
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
