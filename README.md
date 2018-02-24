@@ -81,7 +81,7 @@
    
 * <a name="csharp-4"></a>C# 4.0
    - Dynamic binding (TODO)
-   - Named and optional arguments (TODO)
+   - [Named and optional arguments](#named-and-optional-arguments)
    - Generic co- and contravariance (TODO)
    - Embedded interop types ("NoPIA") (TODO)
    
@@ -1756,6 +1756,44 @@ foreach (int testScore in scoreQuery)
 {
   Console.WriteLine(testScore);
 }                  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Named and optional arguments
+<sup>[[C# 4.0](#csharp-4)]</sup>
+```csharp
+ // Example method
+ public static int Sum(int firstNumber, int secondNumber = 1)  
+{  
+    return firstNumber+ secondNumber;  
+}
+
+// Passing parameters using the normal way
+Sum(10, 20);
+
+// Passing parameters using named parameter
+Sum(firstNumber: 10, secondNumber: 20);
+
+// Passing parameters using default value
+Sum(10);
+
+// Example method using optional parameters
+public int Sum(int firstNumber, [Optional] int secondNumber)  
+{  
+   return firstNumber + secondNumber;  
+} 
+
+// Example method using params keyword
+public int Sum(int firstNumber, params int[] numbers)  
+{  
+   int total = 0;  
+   foreach (int number in numbers)  
+   {  
+       number += number;  
+   }  
+   return total + firstNumber;  
+} 
 ```
 
 **[⬆ back to top](#table-of-contents)**
