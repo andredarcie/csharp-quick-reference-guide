@@ -1,4 +1,4 @@
-# C# Guide
+# C# Quick Reference Guide
 
 > Discovering csharp through code samples. 😉
 
@@ -74,8 +74,8 @@
    - [Auto-Implemented properties](#auto-implemented-properties)
    - [Anonymous types](#anonymous-types)
    - [Extension methods](#extension-methods)
-   - Query expressions (TODO)
-   - Lambda expression (TODO)
+   - [Query expressions](#query-expressions)
+   - [Lambda expressions](#lambda-expressions)
    - [Expression trees](#expression-trees)
    - [Partial methods](#partial-methods)
    
@@ -594,6 +594,7 @@ namespace CalculatorApplication
 **[⬆ back to top](#table-of-contents)**
 
 ## Nullables
+<sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
 int? x = null;
 int? y = 2;
@@ -1680,6 +1681,23 @@ int i = s.WordCount();
 
 **[⬆ back to top](#table-of-contents)**
 
+## Lambda expressions
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// A lambda expression is an anonymous function that you
+// can use to create delegates or expression tree types.
+delegate int del(int i);
+static void Main(string[] args)
+{
+    del myDelegate = x => x * x;
+    int j = myDelegate(5); //j = 25
+    
+    Expression<del> myET = x => x * x;
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Expression trees
 <sup>[[C# 3.0](#csharp-3)]</sup>
 ```csharp
@@ -1713,6 +1731,31 @@ int result = compiledExpression(3, 4); //return 7
          Console.WriteLine("Something happened: {0}", s);
      }
  }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Query expressions
+<sup>[[C# 3.0](#csharp-3)]</sup>
+```csharp
+// A query is a set of instructions that describes what data to retrieve from a given 
+// data source (or sources) and what shape and organization the returned data should have.
+
+// Data source.
+int[] scores = { 90, 71, 82, 93, 75, 82 };
+
+// Query Expression.
+IEnumerable<int> scoreQuery = //query variable
+  from score in scores //required
+  where score > 80 // optional
+  orderby score descending // optional
+  select score; //must end with select or group
+
+// Execute the query to produce the results
+foreach (int testScore in scoreQuery)
+{
+  Console.WriteLine(testScore);
+}                  
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -1754,7 +1797,6 @@ public int Sum(int firstNumber, params int[] numbers)
 ```
 
 **[⬆ back to top](#table-of-contents)**
-
 
 ## Contributing
 
