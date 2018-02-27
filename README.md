@@ -88,7 +88,7 @@
    
 * <a name="csharp-5"></a>C# 5.0
    - Asynchronous methods (TODO)
-   - Caller info attributes (TODO)
+   - [Caller info attributes](#caller-info-attributes)
 
 * <a name="csharp-6"></a>C# 6.0
    - Compiler-as-a-service (Roslyn) (TODO)
@@ -1813,6 +1813,28 @@ public int Sum(int firstNumber, params int[] numbers)
    }  
    return total + firstNumber;  
 } 
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Caller info attributes
+<sup>[[C# 4.0](#csharp-4)]</sup>
+```csharp
+public void DoProcessing()  
+{  
+    TraceMessage("Something happened.");  
+}  
+
+public void TraceMessage(string message,  
+        [CallerMemberName] string memberName = "",  
+        [CallerFilePath] string sourceFilePath = "",  
+        [CallerLineNumber] int sourceLineNumber = 0)  
+{  
+    Trace.WriteLine("message: " + message); // message: Something happened
+    Trace.WriteLine("member name: " + memberName); // member name: DoProcessing  
+    Trace.WriteLine("file path: " + sourceFilePath); // file path: c:\Users\username\Documents\Form1.cs 
+    Trace.WriteLine("source line number: " + sourceLineNumber); // source line number: 31   
+}  
 ```
 
 **[⬆ back to top](#table-of-contents)**
