@@ -1818,7 +1818,7 @@ public int Sum(int firstNumber, params int[] numbers)
 **[⬆ back to top](#table-of-contents)**
 
 ## Caller info attributes
-<sup>[[C# 4.0](#csharp-4)]</sup>
+<sup>[[C# 5.0](#csharp-5)]</sup>
 ```csharp
 public void DoProcessing()  
 {  
