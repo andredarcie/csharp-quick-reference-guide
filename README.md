@@ -81,7 +81,7 @@
    - [Partial methods](#partial-methods)
    
 * <a name="csharp-4"></a>C# 4.0
-   - Dynamic binding (TODO)
+   - [Dynamic binding](#dynamic-binding)
    - [Named and optional arguments](#named-and-optional-arguments)
    - Generic co- and contravariance (TODO)
    - Embedded interop types ("NoPIA") (TODO)
@@ -1757,6 +1757,24 @@ foreach (int testScore in scoreQuery)
 {
   Console.WriteLine(testScore);
 }                  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Dynamic binding 
+<sup>[[C# 4.0](#csharp-4)]</sup>
+```csharp
+// Dynamic binding refers to delaying the process of type resolution from compile time to runtime.
+
+// Static binding
+Person obj = new Person();
+obj.Run(); // Compiler will try to find a method named Run
+           // If not found the compiler will generate an error
+
+// Dynamic binding
+dynamic obj = new Person();
+obj.Run(); // Resolves binding on runtime instead of compile time.
+
 ```
 
 **[⬆ back to top](#table-of-contents)**
