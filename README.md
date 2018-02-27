@@ -67,6 +67,7 @@
    - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
    - [Static classes](#static)
    - [Delegate inference](#delegate-inference)
+   - Namespace alias (TODO)
 
 * <a name="csharp-3"></a>C# 3.0
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
