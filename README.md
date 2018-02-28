@@ -104,7 +104,7 @@
    - Dictionary initializer (TODO)
 
 * <a name="csharp-7"></a>C# 7.0
-   - Out variables (TODO)
+   - [Out variables](#method-parameters)
    - Pattern matching (TODO)
    - Tuples (TODO)
    - Deconstruction (TODO)
@@ -1167,7 +1167,8 @@ class RefExample
 }
 ```
 
-* Out
+* Out 
+<sup>[[C# 7.0](#csharp-7)]</sup>
    - Parameter modifier
    ```csharp
    class OutExample
