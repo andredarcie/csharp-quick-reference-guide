@@ -83,7 +83,7 @@
 * <a name="csharp-4"></a>C# 4.0
    - [Dynamic binding](#dynamic-binding)
    - [Named and optional arguments](#named-and-optional-arguments)
-   - Generic co- and contravariance (TODO)
+   - [Generic co and contravariance](#generic-co-and-contravariance)
    - Embedded interop types ("NoPIA") (TODO)
    
 * <a name="csharp-5"></a>C# 5.0
@@ -1814,6 +1814,25 @@ public int Sum(int firstNumber, params int[] numbers)
    }  
    return total + firstNumber;  
 } 
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Generic co and contravariance
+<sup>[[C# 4.0](#csharp-4)]</sup>
+* Covariance
+```csharp
+// Enables you to use a more derived type than originally specified
+IEnumerable<Derived> d = new List<Derived>();
+IEnumerable<Base> b = d;
+```
+
+* Contravariance
+```csharp
+// Enables you to use a more generic (less derived) type than originally specified
+Action<Base> b = (target) => { Console.WriteLine(target.GetType().Name); };
+Action<Derived> d = b;
+d(new Derived());
 ```
 
 **[⬆ back to top](#table-of-contents)**
