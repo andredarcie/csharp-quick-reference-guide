@@ -328,22 +328,22 @@ yield          // You indicate that the method, operator, or get accessor in whi
 ## Type Conversion
 
 ```csharp
-x.ToBoolean();    // Converts a type to a Boolean value
-x.ToByte();       // Converts a type to a byte
-x.ToChar();       // Converts a type to a single Unicode character
-x.ToDateTime();   // Converts a type (integer or string type) to date-time structures
-x.ToDecimal();    // Converts a floating point or integer type to a decimal type
-x.ToDouble();     // Converts a type to a double type
-x.ToInt16();      // Converts a type to a 16-bit integer
-x.ToInt32();      // Converts a type to a 32-bit integer
-x.ToInt64();      // Converts a type to a 64-bit integer
-x.ToSbyte();      // Converts a type to a signed byte type
-x.ToSingle();     // Converts a type to a small floating point number
-x.ToString();     // Converts a type to a string
-x.ToType();       // Converts a type to a specified type
-x.ToUInt16();     // Converts a type to an unsigned int type
-x.ToUInt32();     // Converts a type to an unsigned long type
-x.ToUInt64();     // Converts a type to an unsigned big integer
+Convert.ToBoolean(x);    // Converts a type to a Boolean value
+Convert.ToByte(x);       // Converts a type to a byte
+Convert.ToChar(x);       // Converts a type to a single Unicode character
+Convert.ToDateTime(x);   // Converts a type (integer or string type) to date-time structures
+Convert.ToDecimal(x);    // Converts a floating point or integer type to a decimal type
+Convert.ToDouble(x);     // Converts a type to a double type
+Convert.ToInt16(x);      // Converts a type to a 16-bit integer
+Convert.ToInt32(x);      // Converts a type to a 32-bit integer
+Convert.ToInt64(x);      // Converts a type to a 64-bit integer
+Convert.ToSbyte(x);      // Converts a type to a signed byte type
+Convert.ToSingle(x);     // Converts a type to a small floating point number
+Convert.ToString(x);     // Converts a type to a string
+Convert.ToType(x);       // Converts a type to a specified type
+Convert.ToUInt16(x);     // Converts a type to an unsigned int type
+Convert.ToUInt32(x);     // Converts a type to an unsigned long type
+Convert.ToUInt64(x);     // Converts a type to an unsigned big integer
 ```
 
 * As
