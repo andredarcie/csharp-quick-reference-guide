@@ -84,7 +84,6 @@
    - [Dynamic binding](#dynamic-binding)
    - [Named and optional arguments](#named-and-optional-arguments)
    - [Generic co and contravariance](#generic-co-and-contravariance)
-   - Embedded interop types ("NoPIA") (TODO)
    
 * <a name="csharp-5"></a>C# 5.0
    - Asynchronous methods (TODO)
