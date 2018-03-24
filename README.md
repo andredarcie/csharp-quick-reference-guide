@@ -86,7 +86,7 @@
    - [Generic co and contravariance](#generic-co-and-contravariance)
    
 * <a name="csharp-5"></a>C# 5.0
-   - Asynchronous methods (TODO)
+   - [Asynchronous methods](#asynchronous-methods)
    - [Caller info attributes](#caller-info-attributes)
 
 * <a name="csharp-6"></a>C# 6.0
@@ -1854,6 +1854,43 @@ public void TraceMessage(string message,
     Trace.WriteLine("file path: " + sourceFilePath); // file path: c:\Users\username\Documents\Form1.cs 
     Trace.WriteLine("source line number: " + sourceLineNumber); // source line number: 31   
 }  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Asynchronous methods
+<sup>[[C# 5.0](#csharp-5)]</sup>
+```csharp
+// For I/O-bound code, you await an operation which returns a Task or Task<T> inside of an async method.
+private readonly HttpClient _httpClient = new HttpClient();
+
+downloadButton.Clicked += async (o, e) =>
+{
+    // This line will yield control to the UI as the request
+    // from the web service is happening.
+    //
+    // The UI thread is now free to perform other work.
+    var stringData = await _httpClient.GetStringAsync(URL);
+    DoSomethingWithData(stringData);
+};
+
+// For CPU-bound code, you await an operation which is started on a background thread with the Task.Run method.
+private DamageResult CalculateDamageDone()
+{
+    // Code omitted:
+    //
+    // Does an expensive calculation and returns
+    // the result of that calculation.
+}
+
+
+calculateButton.Clicked += async (o, e) =>
+{
+    // This line will yield control to the UI while CalculateDamageDone()
+    // performs its work.  The UI thread is free to perform other work.
+    var damageResult = await Task.Run(() => CalculateDamageDone());
+    DisplayDamage(damageResult);
+};
 ```
 
 **[⬆ back to top](#table-of-contents)**
