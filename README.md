@@ -90,7 +90,7 @@
    - [Caller info attributes](#caller-info-attributes)
 
 * <a name="csharp-6"></a>C# 6.0
-   - Compiler-as-a-service Roslyn(#compiler-as-a-service-roslyn)
+   - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
    - Import of static type members into namespace (TODO)
    - Exception filters (TODO)
    - Await in catch/finally blocks (TODO)
@@ -1895,12 +1895,11 @@ calculateButton.Clicked += async (o, e) =>
 
 **[⬆ back to top](#table-of-contents)**
 
-## Compiler-as-a-service Roslyn
+## Compiler as a service Roslyn
 <sup>[[C# 6.0](#csharp-6)]</sup>
 ```csharp
 // Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs.
 
-// Syntax analysis traversing trees
 const string programText =
 @"using System;
 using System.Collections;
@@ -1918,6 +1917,7 @@ namespace HelloWorld
     }
 }";
 
+// Syntax analysis traversing trees
 // Build the syntax tree
 SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);
 CompilationUnitSyntax root = tree.GetCompilationUnitRoot(); // Retrieve the root node of that tree
@@ -1928,6 +1928,22 @@ WriteLine($"The tree has {root.Members.Count} elements in it.");
 WriteLine($"The tree has {root.Usings.Count} using statements. They are:");
 foreach (UsingDirectiveSyntax element in root.Usings)
     WriteLine($"\t{element.Name}");
+    
+// Semantic analysis Querying symbols
+var compilation = CSharpCompilation.Create("HelloWorld")
+    .AddReferences(MetadataReference.CreateFromFile(
+        typeof(string).Assembly.Location))
+    .AddSyntaxTrees(tree);
+
+// Querying the semantic model
+SemanticModel model = compilation.GetSemanticModel(tree);
+
+// Use the syntax tree to find "using System;"
+UsingDirectiveSyntax usingSystem = root.Usings[0];
+NameSyntax systemName = usingSystem.Name;
+
+// Use the semantic model for symbol information:
+SymbolInfo nameInfo = model.GetSymbolInfo(systemName);
 ```
 
 **[⬆ back to top](#table-of-contents)**
