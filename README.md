@@ -90,7 +90,7 @@
    - [Caller info attributes](#caller-info-attributes)
 
 * <a name="csharp-6"></a>C# 6.0
-   - Compiler-as-a-service (Roslyn) (TODO)
+   - Compiler-as-a-service Roslyn(#compiler-as-a-service-roslyn)
    - Import of static type members into namespace (TODO)
    - Exception filters (TODO)
    - Await in catch/finally blocks (TODO)
@@ -1891,6 +1891,43 @@ calculateButton.Clicked += async (o, e) =>
     var damageResult = await Task.Run(() => CalculateDamageDone());
     DisplayDamage(damageResult);
 };
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Compiler-as-a-service Roslyn
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+// Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs.
+
+// Syntax analysis traversing trees
+const string programText =
+@"using System;
+using System.Collections;
+using System.Linq;
+using System.Text;
+ 
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(""Hello, World!"");
+        }
+    }
+}";
+
+// Build the syntax tree
+SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);
+CompilationUnitSyntax root = tree.GetCompilationUnitRoot(); // Retrieve the root node of that tree
+
+// Examine the nodes in the tree.
+WriteLine($"The tree is a {root.Kind()} node.");
+WriteLine($"The tree has {root.Members.Count} elements in it.");
+WriteLine($"The tree has {root.Usings.Count} using statements. They are:");
+foreach (UsingDirectiveSyntax element in root.Usings)
+    WriteLine($"\t{element.Name}");
 ```
 
 **[⬆ back to top](#table-of-contents)**
