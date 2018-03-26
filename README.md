@@ -91,7 +91,7 @@
 
 * <a name="csharp-6"></a>C# 6.0
    - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
-   - [Import of static type members into namespace](import-of-static-type-members-into-namespace)
+   - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)
    - Exception filters (TODO)
    - Await in catch/finally blocks (TODO)
    - Auto property initializers (TODO)
