@@ -91,7 +91,7 @@
 
 * <a name="csharp-6"></a>C# 6.0
    - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
-   - Import of static type members into namespace (TODO)
+   - [Import of static type members into namespace](import-of-static-type-members-into-namespace)
    - Exception filters (TODO)
    - Await in catch/finally blocks (TODO)
    - Auto property initializers (TODO)
@@ -1944,6 +1944,20 @@ NameSyntax systemName = usingSystem.Name;
 
 // Use the semantic model for symbol information:
 SymbolInfo nameInfo = model.GetSymbolInfo(systemName);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Import of static type members into namespace
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+// Without using static 
+using System;
+Math.PI
+
+// Using static directive designates a type whose static members you can access without specifying a type name.
+using static System.Math;
+Math.PI
 ```
 
 **[⬆ back to top](#table-of-contents)**
