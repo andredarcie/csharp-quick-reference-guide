@@ -824,7 +824,7 @@ finally
 ```csharp
 try
   {	
-  	throw new Exception("Exception 1");
+    throw new Exception("Exception 1");
   }
   catch(Exception ex) when(ex.Message == "Exception 2")
   {
