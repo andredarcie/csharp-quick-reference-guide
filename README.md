@@ -92,7 +92,7 @@
 * <a name="csharp-6"></a>C# 6.0
    - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
    - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)
-   - Exception filters (TODO)
+   - [Exception filters](#exception-filters)
    - Await in catch/finally blocks (TODO)
    - Auto property initializers (TODO)
    - Default values for getter-only properties (TODO)
@@ -818,6 +818,24 @@ finally
    // statements to be executed
 }
 ```
+
+* Exception filters
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+try
+  {	
+  	throw new Exception("Exception 1");
+  }
+  catch(Exception ex) when(ex.Message == "Exception 2")
+  {
+    Console.WriteLine("caught Exception 2");
+  }
+  catch(Exception ex) when(ex.Message == "Exception 1")
+  {
+    Console.WriteLine("caught Exception 1");
+  }
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Checked and Unchecked 
