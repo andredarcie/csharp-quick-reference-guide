@@ -93,7 +93,7 @@
    - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
    - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)
    - [Exception filters](#exception-handling)
-   - Await in catch/finally blocks (TODO)
+   - [Await in catch finally blocks](#await-in-catch-finally-blocks)
    - Auto property initializers (TODO)
    - Default values for getter-only properties (TODO)
    - Expression-bodied members (TODO)
@@ -1976,6 +1976,21 @@ Math.PI
 // Using static directive designates a type whose static members you can access without specifying a type name.
 using static System.Math;
 Math.PI
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Await in catch finally blocks
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+try
+{
+  await ThatMayThrowAsync();
+}
+catch (ExpectedException ex)
+{
+  await Logger.LogAsync(ex);
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
