@@ -94,7 +94,7 @@
    - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)
    - [Exception filters](#exception-handling)
    - [Await in catch finally blocks](#await-in-catch-finally-blocks)
-   - Auto property initializers (TODO)
+   - [Auto property initializers](#auto-property-initializers)
    - Default values for getter-only properties (TODO)
    - Expression-bodied members (TODO)
    - Null propagator (null-conditional operator, succinct null checking) (TODO)
@@ -1991,6 +1991,15 @@ catch (ExpectedException ex)
 {
   await Logger.LogAsync(ex);
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Auto property initializers
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+public decimal Price { get; set; } = 0.50m;
+public string Name { get; set; } = "John";
 ```
 
 **[⬆ back to top](#table-of-contents)**
