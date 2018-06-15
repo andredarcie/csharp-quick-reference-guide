@@ -99,7 +99,7 @@
    - Expression-bodied members (TODO)
    - Null propagator (null-conditional operator, succinct null checking) (TODO)
    - String interpolation (TODO)
-   - nameof operator (TODO)
+   - [nameof operator](#nameof-operator)
    - Dictionary initializer (TODO)
 
 * <a name="csharp-7"></a>C# 7.0
@@ -2000,6 +2000,24 @@ catch (ExpectedException ex)
 ```csharp
 public decimal Price { get; set; } = 0.50m;
 public string Name { get; set; } = "John";
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Nameof operator
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+class Person {
+   public string Name { get; set; }
+}
+
+var person = new Person();
+		
+int number = 0;
+string text = "lorem ipsum";
+Console.WriteLine(nameof(number)); // number
+Console.WriteLine(nameof(text)); // text
+Console.WriteLine(nameof(person.Name)); // Name
 ```
 
 **[⬆ back to top](#table-of-contents)**
