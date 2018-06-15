@@ -95,7 +95,7 @@
    - [Exception filters](#exception-handling)
    - [Await in catch finally blocks](#await-in-catch-finally-blocks)
    - [Auto property initializers](#auto-property-initializers)
-   - Default values for getter-only properties (TODO)
+   - [Default values for getter-only properties](default-values-for-getter-only-properties)
    - [Expression-bodied members](#expression-bodied-members)
    - [Null propagator (null-conditional operator, succinct null checking)](#null-propagator-(null-conditional-operator,-succinct-null-checking))
    - [String interpolation](#string-interpolation)
@@ -2066,6 +2066,25 @@ var dictionary = new Dictionary<string, int>
 int? length = customers?.Length; // null if customers is null   
 Customer first = customers?[0];  // null if customers is null  
 int? count = customers?[0]?.Orders?.Count();  // null if customers, the first customer, or Orders is null  
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Default values for getter-only properties
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+public class Dog
+{
+    public string Name { get; set; }
+
+    // DogCreationTime is immutable
+    public DateTime DogCreationTime { get; } = DateTime.Now;
+
+    public Dog(string name)
+    {
+        Name = name;
+    }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
