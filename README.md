@@ -98,7 +98,7 @@
    - Default values for getter-only properties (TODO)
    - Expression-bodied members (TODO)
    - Null propagator (null-conditional operator, succinct null checking) (TODO)
-   - String interpolation (TODO)
+   - [String interpolation](#string-interpolation)
    - [nameof operator](#nameof-operator)
    - Dictionary initializer (TODO)
 
@@ -2018,6 +2018,14 @@ string text = "lorem ipsum";
 Console.WriteLine(nameof(number)); // number
 Console.WriteLine(nameof(text)); // text
 Console.WriteLine(nameof(person.Name)); // Name
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## String interpolation
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.");
 ```
 
 **[⬆ back to top](#table-of-contents)**
