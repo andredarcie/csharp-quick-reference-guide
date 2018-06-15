@@ -100,7 +100,7 @@
    - Null propagator (null-conditional operator, succinct null checking) (TODO)
    - [String interpolation](#string-interpolation)
    - [nameof operator](#nameof-operator)
-   - Dictionary initializer (TODO)
+   - [Dictionary initializer](#dictionary-initializer)
 
 * <a name="csharp-7"></a>C# 7.0
    - [Out variables](#method-parameters)
@@ -2043,6 +2043,19 @@ var person = new Person();
 person.FirstName = "John";
 person.LastName = "Doe";
 Console.WriteLine(person.GetFullName());
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Dictionary initializer
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+var dictionary = new Dictionary<string, int>
+{
+    ["one"] = 1,
+    ["two"] = 2,
+    ["three"] = 3
+};
 ```
 
 **[⬆ back to top](#table-of-contents)**
