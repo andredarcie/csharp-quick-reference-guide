@@ -97,7 +97,7 @@
    - [Auto property initializers](#auto-property-initializers)
    - Default values for getter-only properties (TODO)
    - [Expression-bodied members](#expression-bodied-members)
-   - Null propagator (null-conditional operator, succinct null checking) (TODO)
+   - [Null propagator (null-conditional operator, succinct null checking)](#null-propagator-(null-conditional-operator,-succinct-null-checking))
    - [String interpolation](#string-interpolation)
    - [nameof operator](#nameof-operator)
    - [Dictionary initializer](#dictionary-initializer)
@@ -2056,6 +2056,16 @@ var dictionary = new Dictionary<string, int>
     ["two"] = 2,
     ["three"] = 3
 };
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Null propagator (null-conditional operator, succinct null checking)
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+int? length = customers?.Length; // null if customers is null   
+Customer first = customers?[0];  // null if customers is null  
+int? count = customers?[0]?.Orders?.Count();  // null if customers, the first customer, or Orders is null  
 ```
 
 **[⬆ back to top](#table-of-contents)**
