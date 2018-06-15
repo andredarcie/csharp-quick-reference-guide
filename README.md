@@ -95,7 +95,7 @@
    - [Exception filters](#exception-handling)
    - [Await in catch finally blocks](#await-in-catch-finally-blocks)
    - [Auto property initializers](#auto-property-initializers)
-   - [Default values for getter only properties](default-values-for-getter-only-properties)
+   - [Default values for getter only properties](#default-values-for-getter-only-properties)
    - [Expression-bodied members](#expression-bodied-members)
    - [Null propagator (null-conditional operator, succinct null checking)](#null-propagator-(null-conditional-operator,-succinct-null-checking))
    - [String interpolation](#string-interpolation)
