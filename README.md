@@ -96,7 +96,7 @@
    - [Await in catch finally blocks](#await-in-catch-finally-blocks)
    - [Auto property initializers](#auto-property-initializers)
    - Default values for getter-only properties (TODO)
-   - Expression-bodied members (TODO)
+   - [Expression-bodied members](#expression-bodied-members)
    - Null propagator (null-conditional operator, succinct null checking) (TODO)
    - [String interpolation](#string-interpolation)
    - [nameof operator](#nameof-operator)
@@ -2026,6 +2026,23 @@ Console.WriteLine(nameof(person.Name)); // Name
 <sup>[[C# 6.0](#csharp-6)]</sup>
 ```csharp
 Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} now.");
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Expression-bodied members
+<sup>[[C# 6.0](#csharp-6)]</sup>
+```csharp
+class Person {
+  public string FirstName { get; set; }
+  public string LastName { get; set; }
+  public string GetFullName() => FirstName + " " + LastName;
+}
+
+var person = new Person();
+person.FirstName = "John";
+person.LastName = "Doe";
+Console.WriteLine(person.GetFullName());
 ```
 
 **[⬆ back to top](#table-of-contents)**
