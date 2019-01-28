@@ -253,8 +253,11 @@ x--     // Decrement operator decreases integer value by one
 !(x || y)  // Logical NOT Operator
 ```
 
-* Overload a built-in operator
+* Overload a built-in operator    
+<sup>[[Run example](https://repl.it/@andredarcie/Overload-a-built-in-operator)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/operator)]</sup>
 ```csharp
+using System;
+
 class Fraction
 {
     int num, den;
@@ -269,6 +272,19 @@ class Fraction
     {
         return new Fraction(a.num * b.den + b.num * a.den,
            a.den * b.den);
+    }
+
+    // user-defined conversion from Fraction to double
+    public static implicit operator double(Fraction f)
+    {
+        return (double)f.num / f.den;
+    }
+
+    static void Main () {
+        Fraction x = new Fraction(1, 2);
+        Fraction y = new Fraction(3, 4);
+
+        Console.WriteLine ((double)x + y);
     }
 }
 ```
