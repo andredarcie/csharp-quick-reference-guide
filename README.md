@@ -316,7 +316,8 @@ class Fraction
 
 ## Decision Making
 
-* If statement
+* If statement  
+<sup>[[Run example](https://repl.it/@diguifi/Decision-Making-1)]</sup>
 ```csharp
 if(boolean_expression)
 {
@@ -324,7 +325,8 @@ if(boolean_expression)
 }
 ```
 
-* If else statement
+* If else statements  
+<sup>[[Run example](https://repl.it/@diguifi/Decision-Making-2)]</sup>
 ```csharp
 if(boolean_expression)
 {
@@ -336,7 +338,8 @@ else
 }
 ```
 
-* If else statement
+* If, else if, else statements  
+<sup>[[Run example](https://repl.it/@diguifi/Decision-Making-3)]</sup>
 ```csharp
 if(boolean_expression1)
 {
@@ -352,7 +355,8 @@ else
 }
 ```
 
-* Nested if statements
+* Nested if statements  
+<sup>[[Run example](https://repl.it/@diguifi/Decision-Making-4)]</sup>
 ```csharp
 if( boolean_expression1)
 {
@@ -364,9 +368,11 @@ if( boolean_expression1)
 }
 ```
 
-* Switch statement
+* Switch statement  
+<sup>[[Run example](https://repl.it/@diguifi/Decision-Making-5)]</sup>
 ```csharp
-switch(place) {
+switch(place)
+{
    case 1  :
       Console.WriteLine("First!");
       break; 
@@ -375,6 +381,7 @@ switch(place) {
       break; 
    default : /* Optional */
       Console.WriteLine("Invalid place!");
+      break; 
 }
 ```
 **[⬆ back to top](#table-of-contents)**
