@@ -104,7 +104,7 @@
 
 * <a name="csharp-7"></a>C# 7.0
    - [Out variables](#method-parameters)
-   - Pattern matching (TODO)
+   - [Pattern matching](#pattern-matching)
    - Tuples (TODO)
    - Deconstruction (TODO)
    - Local functions (TODO)
@@ -1987,6 +1987,39 @@ public class Dog
     public Dog(string name)
     {
         Name = name;
+    }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Pattern Matching
+<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching)]</sup>
+
+Patterns test that a value has a certain shape, and can extract information from the value when it has the matching shape.
+
+```csharp
+public static void SwitchPattern(object o)
+{
+    switch (o)
+    {
+        case null:
+            Console.WriteLine("it's a constant pattern");
+            break;
+        case int i:
+            Console.WriteLine("it's an int");
+            break;
+        case Person p when p.FirstName.StartsWith("A"):
+            Console.WriteLine($"a A person {p.FirstName}");
+            break;
+        case Person p:
+            Console.WriteLine($"any other person {p.FirstName}");
+            break;
+        case var x:
+            Console.WriteLine($"it's a var pattern with the type {x?.GetType().Name} ");
+            break;
+        default:
+            break;
     }
 }
 ```
