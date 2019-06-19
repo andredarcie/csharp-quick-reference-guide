@@ -2093,28 +2093,6 @@ public static string Sum(int x, int y) {
 
 **[⬆ back to top](#table-of-contents)**
 
-## Local functions
-<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#local-functions)]</sup>
-
-Local functions enable you to declare methods inside the context of another method.
-
-```csharp
-public static void Main()
-{
-    Console.WriteLine(Sum(1,1));
-}
-
-public static string Sum(int x, int y) {
-    return DisplayResult(x + y);
-
-    string DisplayResult(int result) {
-        return result.ToString();
-    }
-}
-```
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Keywords
 
 ```csharp
