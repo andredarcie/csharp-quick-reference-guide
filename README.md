@@ -105,7 +105,7 @@
 * <a name="csharp-7"></a>C# 7.0
    - [Out variables](#method-parameters)
    - [Pattern matching](#pattern-matching)
-   - Tuples (TODO)
+   - [Tuples](#tuples)
    - Deconstruction (TODO)
    - Local functions (TODO)
    - Digit separators (TODO)
@@ -2022,6 +2022,28 @@ public static void SwitchPattern(object o)
             break;
     }
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Tuples
+<sup>[[C# 7.0](#csharp-6)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#tuples)]</sup>
+
+Tuples are lightweight data structures that contain multiple fields to represent the data members.
+
+```csharp
+// You can create a tuple by assigning a value to each member
+(string Alpha, string Beta) namedLetters = ("a", "b");
+Console.WriteLine($"{namedLetters.Alpha}, {namedLetters.Beta}");
+
+// You can also specify the names of the fields on the right-hand side of the assignment
+var alphabetStart = (Alpha: "a", Beta: "b");
+Console.WriteLine($"{alphabetStart.Alpha}, {alphabetStart.Beta}");
+
+// There may be times when you want to unpackage the members of a tuple that were returned from a method
+(int max, int min) = Range(numbers);
+Console.WriteLine(max);
+Console.WriteLine(min);
 ```
 
 **[⬆ back to top](#table-of-contents)**
