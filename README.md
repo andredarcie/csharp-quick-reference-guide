@@ -106,15 +106,15 @@
    - [Out variables](#method-parameters)
    - [Pattern matching](#pattern-matching)
    - [Tuples](#tuples)
-   - Deconstruction (TODO)
-   - Local functions (TODO)
-   - Digit separators (TODO)
-   - Binary literals (TODO)
-   - Ref returns and locals (TODO)
-   - Generalized async return types (TODO)
-   - Expression bodied constructors and finalizers (TODO)
-   - Expression bodied getters and setters (TODO)
-   - Throw can also be used as expression (TODO)
+   - [Deconstruction](#deconstruction)
+   - [Local functions](#local-functions)
+   - [Digit separators](#digit-separators)
+   - [Binary literals](#binary-literals)
+   - [Ref returns and locals](#ref-returns-and-locals)
+   - [Generalized async return types](#generalized-async-return-types)
+   - [Expression bodied constructors and finalizers](#expression-bodied-constructors-and-finalizers)
+   - [Expression bodied getters and setters](expression-bodied-getters-and-setters)
+   - [Throw can also be used as expression](throw-can-also-be-used-as-expression)
 
 * <a name="csharp-71"></a>C# 7.1
    - Async main (TODO)
@@ -2027,7 +2027,7 @@ public static void SwitchPattern(object o)
 **[⬆ back to top](#table-of-contents)**
 
 ## Tuples
-<sup>[[C# 7.0](#csharp-6)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#tuples)]</sup>
+<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#tuples)]</sup>
 
 Tuples are lightweight data structures that contain multiple fields to represent the data members.
 
@@ -2044,6 +2044,73 @@ Console.WriteLine($"{alphabetStart.Alpha}, {alphabetStart.Beta}");
 (int max, int min) = Range(numbers);
 Console.WriteLine(max);
 Console.WriteLine(min);
+```
+
+## Tuples
+<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#tuples)]</sup>
+
+Tuples are lightweight data structures that contain multiple fields to represent the data members.
+
+```csharp
+// You can create a tuple by assigning a value to each member
+(string Alpha, string Beta) namedLetters = ("a", "b");
+Console.WriteLine($"{namedLetters.Alpha}, {namedLetters.Beta}");
+
+// You can also specify the names of the fields on the right-hand side of the assignment
+var alphabetStart = (Alpha: "a", Beta: "b");
+Console.WriteLine($"{alphabetStart.Alpha}, {alphabetStart.Beta}");
+```
+
+### Deconstruction
+```csharp
+// There may be times when you want to unpackage the members of a tuple that were returned from a method
+(int max, int min) = Range(numbers);
+Console.WriteLine(max);
+Console.WriteLine(min);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Local functions
+<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#local-functions)]</sup>
+
+Local functions enable you to declare methods inside the context of another method.
+
+```csharp
+public static void Main()
+{
+    Console.WriteLine(Sum(1,1));
+}
+
+public static string Sum(int x, int y) {
+    return DisplayResult(x + y);
+
+    string DisplayResult(int result) {
+        return result.ToString();
+    }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Local functions
+<sup>[[C# 7.0](#csharp-7)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7#local-functions)]</sup>
+
+Local functions enable you to declare methods inside the context of another method.
+
+```csharp
+public static void Main()
+{
+    Console.WriteLine(Sum(1,1));
+}
+
+public static string Sum(int x, int y) {
+    return DisplayResult(x + y);
+
+    string DisplayResult(int result) {
+        return result.ToString();
+    }
+}
 ```
 
 **[⬆ back to top](#table-of-contents)**
