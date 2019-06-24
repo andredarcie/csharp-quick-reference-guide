@@ -388,7 +388,8 @@ switch(place)
 
 ## Loops
 
-* While loop
+* While loop  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-1)]</sup>
 ```csharp
 while(condition)
 {
@@ -396,44 +397,48 @@ while(condition)
 }
 ```
 
-* For loop
+* For loop  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-2)]</sup>
 ```csharp
 for (int x = 0; x < 10; x++)
 {
-   Console.WriteLine("value of x: {0}", x);
+   Console.WriteLine($"value of x: {x}");
 }
 ```
 
-* Do...while loop
+* Do...while loop  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-3)]</sup>
 ```csharp
 int x = 0;
 
 do
 {
-   Console.WriteLine("value of x: {0}", x);
+   Console.WriteLine($"value of x: {x}");
    x++;
 } 
 while (x < 10);
 ```
 
-* Nested loops
+* Nested loops  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-4)]</sup>
 ```csharp
 for (int x = 0; x < 10; x++)
 {
    for (int y = 0; y < 10; y++) 
    {
-      Console.WriteLine("x: {0}, y: {1}", x, y);
+      Console.WriteLine($"x: {x}, y: {y}");
    }
 }
 ```
 
-* Break Statement
+* Break Statement  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-5)]</sup>
 ```csharp
 int x = 0;
 
 while (x < 10)
 {
-   Console.WriteLine("value of x: {0}", x);
+   Console.WriteLine($"value of x: {x}");
    x++;
    if (x > 5)
    {
@@ -443,7 +448,8 @@ while (x < 10)
 }
 ```
 
-* Continue Statement
+* Continue Statement  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-6)]</sup>
 ```csharp
 int x = 0;
 
@@ -452,22 +458,24 @@ do
    if (x == 5)
    {
       x++;
-      /* skip the iteration */
+      /* skips printing 6 */
       continue;
    }
-   Console.WriteLine("value of x: {0}", x);
    x++;
-} 
+   Console.WriteLine($"value of x: {x}");
+}
+while (x < 10);
 ```
 
-* Foreach, in
+* Foreach, in  
+<sup>[[Run example](https://repl.it/@diguifi/Loops-7)]</sup>
 ```csharp
 ArrayList numbers = new ArrayList();
 numbers.Add(1);
 numbers.Add(2);
 numbers.Add(3);
 
-Console.WriteLine("Count: {0}", numbers.Count);
+Console.WriteLine($"Count: {numbers.Count}");
 
 foreach (int number in numbers)
 {
