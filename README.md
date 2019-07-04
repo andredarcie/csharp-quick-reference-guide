@@ -135,7 +135,6 @@
    - Default interface members (TODO)
    - Pattern matching enhancements (TODO)
    - Using declarations (TODO)
-   - Using declarations (TODO)
    - Static local functions (TODO)
    - Disposable ref structs (TODO)
    - Nullable reference types (TODO)
