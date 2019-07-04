@@ -54,7 +54,7 @@
 * [Contributing](#contributing)
 * [License](#license)
 
-## By Feature
+## By Version
 
 * <a name="csharp-2"></a>C# 2.0
    - [Generics](#generics)
@@ -104,17 +104,16 @@
 
 * <a name="csharp-7"></a>C# 7.0
    - [Out variables](#method-parameters)
-   - [Pattern matching](#pattern-matching)
    - [Tuples](#tuples)
+   - Discards (TODO)
+   - [Pattern matching](#pattern-matching)
    - [Deconstruction](#deconstruction)
+   - Ref returns and locals (TODO)
    - [Local functions](#local-functions)
-   - [Digit separators](#digit-separators)
-   - [Binary literals](#binary-literals)
-   - [Ref returns and locals](#ref-returns-and-locals)
-   - [Generalized async return types](#generalized-async-return-types)
-   - [Expression bodied constructors and finalizers](#expression-bodied-constructors-and-finalizers)
-   - [Expression bodied getters and setters](expression-bodied-getters-and-setters)
-   - [Throw can also be used as expression](throw-can-also-be-used-as-expression)
+   - More expression-bodied members (TODO)
+   - throw Expressions (TODO)
+   - Generalized async return types (TODO)
+   - Numeric literal syntax improvements (TODO)
 
 * <a name="csharp-71"></a>C# 7.1
    - Async main (TODO)
@@ -126,7 +125,23 @@
    - Non-trailing named arguments (TODO)
    - Leading underscores in numeric literals (TODO)
    - private protected access modifier (TODO)
-
+   
+* <a name="csharp-73"></a>C# 7.3
+   - More efficient safe code (TODO)
+   - Existing features better (TODO)
+   
+* <a name="csharp-8"></a>C# 8.0
+   - Readonly members (TODO)
+   - Default interface members (TODO)
+   - Pattern matching enhancements (TODO)
+   - Using declarations (TODO)
+   - Using declarations (TODO)
+   - Static local functions (TODO)
+   - Disposable ref structs (TODO)
+   - Nullable reference types (TODO)
+   - Asynchronous streams (TODO)
+   - Indices and ranges (TODO)
+    
 **[⬆ back to top](#table-of-contents)**
 
 ## Hello World
