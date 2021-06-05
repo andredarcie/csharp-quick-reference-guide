@@ -140,7 +140,16 @@
    - Nullable reference types (TODO)
    - Asynchronous streams (TODO)
    - Indices and ranges (TODO)
-    
+
+* <a name="csharp-9"></a>C# 9.0
+   - Record types (TODO)
+   - Init only setters (TODO)
+   - Top-level statements (TODO)
+   - Pattern matching enhancements (TODO)
+   - Performance and interop (TODO)
+   - Fit and finish features (TODO)
+   - Support for code generators (TODO)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Hello World
