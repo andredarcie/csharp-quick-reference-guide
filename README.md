@@ -144,7 +144,7 @@
 * <a name="csharp-9"></a>C# 9.0
    - Record types (TODO)
    - Init only setters (TODO)
-   - Top-level statements (TODO)
+   - [Top-level statements](#top-level-statements)
    - Pattern matching enhancements (TODO)
    - Performance and interop (TODO)
    - Fit and finish features (TODO)
@@ -168,6 +168,11 @@ namespace HelloWorldApplication
 }
 ```
 
+## Top-level statements
+<sup>[[C# 9.0](#csharp-9)]</sup>
+```csharp
+System.Console.WriteLine("Hello World");
+```
 
 **[⬆ back to top](#table-of-contents)**
 
