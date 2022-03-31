@@ -142,7 +142,7 @@
    - Indices and ranges (TODO)
 
 * <a name="csharp-9"></a>C# 9.0
-   - Record types (TODO)
+   - [Record types](#record-types)
    - Init only setters (TODO)
    - [Top-level statements](#top-level-statements)
    - Pattern matching enhancements (TODO)
@@ -2104,6 +2104,24 @@ public static string Sum(int x, int y) {
     string DisplayResult(int result) {
         return result.ToString();
     }
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Record types
+<sup>[[C# 9.0](#csharp-9)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#record-types)]</sup>
+
+You use the record keyword to define a reference type that provides built-in functionality for encapsulating data.
+
+```csharp
+public record Person(string FirstName, string LastName);
+
+public static void Main()
+{
+    Person person = new("Nancy", "Davolio");
+    Console.WriteLine(person);
+    // output: Person { FirstName = Nancy, LastName = Davolio }
 }
 ```
 
