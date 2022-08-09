@@ -143,7 +143,7 @@
 
 * <a name="csharp-9"></a>C# 9.0
    - [Record types](#record-types)
-   - Init only setters (TODO)
+   - [Init only setters](#init-only-setters)
    - [Top-level statements](#top-level-statements)
    - Pattern matching enhancements (TODO)
    - Performance and interop (TODO)
@@ -2126,6 +2126,27 @@ public static void Main()
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Init Only Setters
+<sup>[[C# 9.0](#csharp-9)]</sup> <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9#init-only-setters)]</sup>
+
+Init only setters provide consistent syntax to initialize members of an object.
+
+```csharp
+public struct Person
+{
+    public string Name { get; init; }
+}
+
+var nancy = new Person 
+{ 
+    Name = "nancy", 
+};
+
+// An attempt to change a property after initialization results in a compiler error
+// Error! CS8852.
+nancy.Name = "Davolio";
+```
 
 ## Keywords
 
