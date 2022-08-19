@@ -49,6 +49,7 @@
 * [Virtual](#virtual)    
 * [Volatile](#volatile)
 * [Generics](#generics)
+* [Generic Collections](#generic-collections)
 * [C# Keywords](#csharp-keywords)
 * [Contextual Keywords](#contextual-keywords)
 * [Contributing](#contributing)
@@ -2147,6 +2148,27 @@ var nancy = new Person
 // Error! CS8852.
 nancy.Name = "Davolio";
 ```
+
+## Generic Collections
+<sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0)]</sup>
+Contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.
+
+### Dictionary
+Represents a collection of keys and values.
+
+```csharp
+// Dictionary<TKey,TValue> Class
+// TKey - The type of the keys in the dictionary.
+// TValue - The type of the values in the dictionary.
+
+Dictionary<int, string> numbers = new Dictionary<int, string>();
+numbers.Add(1, "One");
+numbers.Add(2, "Two");
+
+Console.WriteLine(numbers[2]); // Two
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Keywords
 
