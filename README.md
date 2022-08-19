@@ -2151,6 +2151,7 @@ nancy.Name = "Davolio";
 
 ## Generic Collections
 <sup>[[Oficial docs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=net-6.0)]</sup>
+
 Contains interfaces and classes that define generic collections, which allow users to create strongly typed collections that provide better type safety and performance than non-generic strongly typed collections.
 
 ### Dictionary
