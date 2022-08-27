@@ -2175,27 +2175,12 @@ Console.WriteLine(numbers[2]); // Two
 A set is a collection that contains no duplicate elements, and whose elements are in no particular order.
 
 ```csharp
-static class Program {     
-    public static void ConvertToString(this HashSet<int> items)
-    {
-        foreach (int item in items)
-            Console.WriteLine(" {0}", item);
-    }    
-    
-    static void Main(string[] args)
-    {
-        HashSet<int> evenNumbers = new HashSet<int>() { 2, 4, 6 };
-        Console.WriteLine("Before adding two:");
-        evenNumbers.ConvertToString(); //  2 4 6
+List<int> duplicateNumbers = new List<int>() { 2, 2, 4, 6 };
 
-        evenNumbers.Add(2);
+var nonDuplicatedNumbers = new HashSet<int>(duplicateNumbers);
 
-        Console.WriteLine("After adding two:");
-        evenNumbers.ConvertToString(); //  2 4 6
-
-        // The list remains the same
-    }
-}
+foreach (int number in nonDuplicatedNumbers)
+    Console.WriteLine(" {0}", number); // 2 4 6
 ```
 
 **[⬆ back to top](#table-of-contents)**
