@@ -2185,6 +2185,30 @@ foreach (int number in nonDuplicatedNumbers)
 
 **[⬆ back to top](#table-of-contents)**
 
+### LinkedList
+
+Is a general-purpose linked list.
+
+```csharp
+string[] fruits = { "apple", "orange", "lemon", "pear" };
+LinkedList<string> words = new LinkedList<string>(fruits);
+
+foreach (string word in words)
+    Console.WriteLine($" {word}"); // apple orange lemon pear
+
+words.RemoveFirst();
+words.RemoveLast();
+
+foreach (string word in words)
+    Console.WriteLine($" {word}"); // orange lemon
+
+Console.WriteLine($"{words.First?.Value}, {words.Last?.Value}"); // orange, lemon
+
+Console.WriteLine($"{words.First?.Next?.Value}"); // lemon
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Keywords
 
 ```csharp
