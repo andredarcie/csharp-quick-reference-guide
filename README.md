@@ -1321,6 +1321,7 @@ unsafe static void FastCopy(byte[] src, byte[] dst, int count)
 **[⬆ back to top](#table-of-contents)**
 
 ## Global using directives
+<sup>[[C# 10.0](#csharp-10)]</sup>
 
 ```csharp
 // Inside a file named GlobalUsings.cs
