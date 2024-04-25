@@ -153,7 +153,7 @@
 
 * <a name="csharp-10"></a>C# 10.0
    - [Record structs](#record-structs)
-   - Global using directives (TODO)
+   - [Global using directives](#global-using-directives)
    - File-scoped namespace declaration (TODO)
    - Interpolated string handlers (TODO)
    - Extended property patterns (TODO)
@@ -1319,6 +1319,26 @@ unsafe static void FastCopy(byte[] src, byte[] dst, int count)
 ```
 
 **[⬆ back to top](#table-of-contents)**
+
+## Global using directives
+
+```csharp
+// Inside a file named GlobalUsings.cs
+global using System;
+global using System.Collections.Generic;
+
+// In another file, it's not necessary to redeclare the usings above
+public class TestClass
+{
+    public void Print(List<int> list)
+    {
+        foreach (var item in list)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+```
 
 ## Using static
 
