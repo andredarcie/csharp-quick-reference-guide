@@ -151,6 +151,32 @@
    - Fit and finish features (TODO)
    - Support for code generators (TODO)
 
+* <a name="csharp-10"></a>C# 10.0
+   - [Record structs](#record-structs)
+   - Global using directives (TODO)
+   - File-scoped namespace declaration (TODO)
+   - Interpolated string handlers (TODO)
+   - Extended property patterns (TODO)
+
+* <a name="csharp-11"></a>C# 11.0
+   - Raw String Literals (TODO)
+   - Generic Math Support (TODO)
+   - List Patterns (TODO)
+   - Required Members (TODO)
+   - Pattern Match Span on a Constant String (TODO)
+
+* <a name="csharp-12"></a>C# 12.0
+   - Primary constructors (TODO)
+   - Collection expressions (TODO)
+   - Inline arrays (TODO)
+   - Optional parameters in lambda expressions (TODO)
+   - ref readonly parameters (TODO)
+
+* <a name="csharp-13"></a>C# 13.0
+   - New escape sequence (TODO)
+   - Method group natural type (TODO)
+   - Implicit index access (TODO)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Hello World
@@ -2123,6 +2149,20 @@ public static void Main()
     Person person = new("Nancy", "Davolio");
     Console.WriteLine(person);
     // output: Person { FirstName = Nancy, LastName = Davolio }
+}
+```
+
+## Record structs
+<sup>[[C# 10.0](#csharp-10)]</sup>
+
+```csharp
+public record struct Point(int X, int Y);
+
+public static void Main()
+{
+    var p1 = new Point(1, 2);
+    var p2 = new Point(1, 2);
+    Console.WriteLine(p1 == p2); // output: True
 }
 ```
 
