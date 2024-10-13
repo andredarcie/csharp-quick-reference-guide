@@ -68,7 +68,7 @@
    - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
    - [Static classes](#static)
    - [Delegate inference](#delegate-inference)
-   - Namespace alias (TODO)
+   - [Namespace alias](#namespace-alias)
 
 * <a name="csharp-3"></a>C# 3.0
    - [Implicitly typed local variables](#implicitly-typed-local-variables)
@@ -106,7 +106,7 @@
 * <a name="csharp-7"></a>C# 7.0
    - [Out variables](#method-parameters)
    - [Tuples](#tuples)
-   - Discards (TODO)
+   - [Discards](#discards)
    - [Pattern matching](#pattern-matching)
    - [Deconstruction](#deconstruction)
    - Ref returns and locals (TODO)
@@ -1577,6 +1577,15 @@ SomeAction newStyle = SayHello;
 
 **[⬆ back to top](#table-of-contents)**
 
+## Namespace alias
+<sup>[[C# 2.0](#csharp-2)]</sup>
+```csharp
+using Col = System.Collections.Generic;
+Col.List<int> numbers = new Col.List<int> { 1, 2, 3 };
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Implicitly typed local variables
 <sup>[[C# 3.0](#csharp-3)]</sup>
 ```csharp
@@ -2131,6 +2140,14 @@ Console.WriteLine($"{alphabetStart.Alpha}, {alphabetStart.Beta}");
 (int max, int min) = Range(numbers);
 Console.WriteLine(max);
 Console.WriteLine(min);
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+### Discards
+<sup>[[C# 7.0](#csharp-7)]</sup>
+```csharp
+_ = int.TryParse("123", out _); // Discards the out parameter
 ```
 
 **[⬆ back to top](#table-of-contents)**
