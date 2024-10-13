@@ -1128,30 +1128,24 @@ class Z : Y
 **[⬆ back to top](#table-of-contents)**
 
 ## Stackalloc
-
+ 
 ```csharp
+// Allocates memory on the stack instead of the heap, 
+// which is faster and more efficient for small, 
+// short-lived arrays like this Fibonacci sequence.
 class Fibonacci
 {
-    static unsafe void Main() // Unsafe code context
+    static unsafe void Main()
     {
-        const int arraySize = 20;
-        int* fib = stackalloc int[arraySize]; // Allocate a block of memory on the stack
-        int* p = fib;
-        // The sequence begins with 1, 1.
-        *p++ = *p++ = 1;
-        for (int i = 2; i < arraySize; ++i, ++p)
-        {
-            // Sum the previous two numbers.
-            *p = p[-1] + p[-2];
-        }
-        for (int i = 0; i < arraySize; ++i)
-        {
-            Console.WriteLine(fib[i]);
-        }
+        // Allocates a block of memory on the stack for 20 integers
+        int* fib = stackalloc int[20];
+        
+        fib[0] = fib[1] = 1;
+        for (int i = 2; i < 20; i++) 
+            fib[i] = fib[i - 1] + fib[i - 2];
 
-        // Keep the console window open in debug mode.
-        System.Console.WriteLine("Press any key to exit.");
-        System.Console.ReadKey();
+        for (int i = 0; i < 20; i++) 
+            Console.WriteLine(fib[i]);
     }
 }
 ```
