@@ -258,31 +258,14 @@ using System;
 class Fraction
 {
     int num, den;
-    public Fraction(int num, int den)
-    {
-        this.num = num;
-        this.den = den;
-    }
+    public Fraction(int num, int den) => (this.num, this.den) = (num, den);
 
-    // overload operator +
-    public static Fraction operator +(Fraction a, Fraction b)
-    {
-        return new Fraction(a.num * b.den + b.num * a.den,
-           a.den * b.den);
-    }
+    public static Fraction operator +(Fraction a, Fraction b) => 
+        new Fraction(a.num * b.den + b.num * a.den, a.den * b.den);
 
-    // user-defined conversion from Fraction to double
-    public static implicit operator double(Fraction f)
-    {
-        return (double)f.num / f.den;
-    }
+    public static implicit operator double(Fraction f) => (double)f.num / f.den;
 
-    static void Main () {
-        Fraction x = new Fraction(1, 2);
-        Fraction y = new Fraction(3, 4);
-
-        Console.WriteLine ((double)x + y);
-    }
+    static void Main() => Console.WriteLine((double)new Fraction(1, 2) + new Fraction(3, 4));
 }
 ```
 
