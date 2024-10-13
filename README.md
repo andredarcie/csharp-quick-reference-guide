@@ -1356,28 +1356,9 @@ class TestGenericList
 ## Partial Types 
 <sup>[[C# 2.0](#csharp-2)]</sup>
 ```csharp
-// Declare first partial class
-public partial class MyClass
-{
-    int x;
-}
-
-// Declare second partial class
-public partial class MyClass
-{
-    int y;
-}
-
-// Declare third partial class
-public partial class MyClass
-{
-    public MyClass()
-    {
-          this.x = 10;
-          this.y = 20;
-    }
-}
-
+public partial class MyClass { int x; }
+public partial class MyClass { int y; }
+public partial class MyClass { public MyClass() => (x, y) = (10, 20); }
 // The three partials will generate just one class after compiled
 ```
 
@@ -1982,23 +1963,13 @@ public static void SwitchPattern(object o)
 {
     switch (o)
     {
-        case null:
-            Console.WriteLine("it's a constant pattern");
+        case null: Console.WriteLine("null pattern"); break;
+        case int i: Console.WriteLine($"int: {i}"); break;
+        case Person { FirstName: var name } p when name.StartsWith("A"):
+            Console.WriteLine($"A person: {name}");
             break;
-        case int i:
-            Console.WriteLine("it's an int");
-            break;
-        case Person p when p.FirstName.StartsWith("A"):
-            Console.WriteLine($"a A person {p.FirstName}");
-            break;
-        case Person p:
-            Console.WriteLine($"any other person {p.FirstName}");
-            break;
-        case var x:
-            Console.WriteLine($"it's a var pattern with the type {x?.GetType().Name} ");
-            break;
-        default:
-            break;
+        case Person p: Console.WriteLine($"Person: {p.FirstName}"); break;
+        default: Console.WriteLine($"Unknown type: {o?.GetType().Name}"); break;
     }
 }
 ```
