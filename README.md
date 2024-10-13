@@ -25,125 +25,76 @@
 
 ## By Version
 
-* <a name="csharp-2"></a>C# 2.0
-   - [Generics](#generics)
-   - [Partial types](#partial-types)
-   - [Anonymous methods](#anonymous-methods)
-   - [Iterators](#iterators)
-   - [Nullable types](#nullables)
-   - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)
-   - [Method group conversions (delegates)](#method-group-conversions)
-   - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)
-   - [Static classes](#static)
-   - [Delegate inference](#delegate-inference)
-   - [Namespace alias](#namespace-alias)
+* <a name="csharp-2"></a>C# 2.0  
+  - [Generics](#generics)     - [Partial types](#partial-types)    - [Anonymous methods](#anonymous-methods)  
+  - [Iterators](#iterators)   - [Nullable types](#nullables)       - [Getter and setter separate accessibility](#getter-and-setter-separate-accessibility)  
+  - [Method group conversions](#method-group-conversions)  - [Covariance and Contravariance for delegates](#covariance-and-contravariance-for-delegates)  
+  - [Static classes](#static)  - [Delegate inference](#delegate-inference)  - [Namespace alias](#namespace-alias)
 
-* <a name="csharp-3"></a>C# 3.0
-   - [Implicitly typed local variables](#implicitly-typed-local-variables)
-   - [Object and collection initializers](#object-and-collection-initializers)
-   - [Auto-Implemented properties](#auto-implemented-properties)
-   - [Anonymous types](#anonymous-types)
-   - [Extension methods](#extension-methods)
-   - [Query expressions](#query-expressions)
-   - [Lambda expressions](#lambda-expressions)
-   - [Expression trees](#expression-trees)
-   - [Partial methods](#partial-methods)
-   
-* <a name="csharp-4"></a>C# 4.0
-   - [Dynamic binding](#dynamic-binding)
-   - [Named and optional arguments](#named-and-optional-arguments)
-   - [Generic co and contravariance](#generic-co-and-contravariance)
-   
-* <a name="csharp-5"></a>C# 5.0
-   - [Asynchronous methods](#asynchronous-methods)
-   - [Caller info attributes](#caller-info-attributes)
+* <a name="csharp-3"></a>C# 3.0  
+  - [Implicitly typed local variables](#implicitly-typed-local-variables)  - [Object and collection initializers](#object-and-collection-initializers)  
+  - [Auto-Implemented properties](#auto-implemented-properties)           - [Anonymous types](#anonymous-types)  
+  - [Extension methods](#extension-methods)   - [Query expressions](#query-expressions)    - [Lambda expressions](#lambda-expressions)  
+  - [Expression trees](#expression-trees)     - [Partial methods](#partial-methods)
 
-* <a name="csharp-6"></a>C# 6.0
-   - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)
-   - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)
-   - [Exception filters](#exception-handling)
-   - [Await in catch finally blocks](#await-in-catch-finally-blocks)
-   - [Auto property initializers](#auto-property-initializers)
-   - [Default values for getter only properties](#default-values-for-getter-only-properties)
-   - [Expression-bodied members](#expression-bodied-members)
-   - [Null propagator (null-conditional operator, succinct null checking)](#null-propagator-(null-conditional-operator,-succinct-null-checking))
-   - [String interpolation](#string-interpolation)
-   - [nameof operator](#nameof-operator)
-   - [Dictionary initializer](#dictionary-initializer)
+* <a name="csharp-4"></a>C# 4.0  
+  - [Dynamic binding](#dynamic-binding)   - [Named and optional arguments](#named-and-optional-arguments)  
+  - [Generic co and contravariance](#generic-co-and-contravariance)
 
-* <a name="csharp-7"></a>C# 7.0
-   - [Out variables](#method-parameters)
-   - [Tuples](#tuples)
-   - [Discards](#discards)
-   - [Pattern matching](#pattern-matching)
-   - [Deconstruction](#deconstruction)
-   - Ref returns and locals (TODO)
-   - [Local functions](#local-functions)
-   - More expression-bodied members (TODO)
-   - throw Expressions (TODO)
-   - Generalized async return types (TODO)
-   - Numeric literal syntax improvements (TODO)
+* <a name="csharp-5"></a>C# 5.0  
+  - [Asynchronous methods](#asynchronous-methods)  - [Caller info attributes](#caller-info-attributes)
 
-* <a name="csharp-71"></a>C# 7.1
-   - Async main (TODO)
-   - Default literal expressions (TODO)
-   - Inferred tuple element names (TODO)
+* <a name="csharp-6"></a>C# 6.0  
+  - [Compiler as a service Roslyn](#compiler-as-a-service-roslyn)   - [Import of static type members into namespace](#import-of-static-type-members-into-namespace)  
+  - [Exception filters](#exception-handling)    - [Await in catch finally blocks](#await-in-catch-finally-blocks)  
+  - [Auto property initializers](#auto-property-initializers)       - [Default values for getter only properties](#default-values-for-getter-only-properties)  
+  - [Expression-bodied members](#expression-bodied-members)         - [Null propagator](#null-propagator-(null-conditional-operator,-succinct-null-checking))  
+  - [String interpolation](#string-interpolation)   - [nameof operator](#nameof-operator)   - [Dictionary initializer](#dictionary-initializer)
 
-* <a name="csharp-72"></a>C# 7.2
-   - Reference semantics with value types (TODO)
-   - Non-trailing named arguments (TODO)
-   - Leading underscores in numeric literals (TODO)
-   - private protected access modifier (TODO)
-   
-* <a name="csharp-73"></a>C# 7.3
-   - More efficient safe code (TODO)
-   - Existing features better (TODO)
-   
-* <a name="csharp-8"></a>C# 8.0
-   - Readonly members (TODO)
-   - Default interface members (TODO)
-   - Pattern matching enhancements (TODO)
-   - Using declarations (TODO)
-   - Static local functions (TODO)
-   - Disposable ref structs (TODO)
-   - Nullable reference types (TODO)
-   - Asynchronous streams (TODO)
-   - Indices and ranges (TODO)
+* <a name="csharp-7"></a>C# 7.0  
+  - [Out variables](#method-parameters)    - [Tuples](#tuples)    - [Discards](#discards)  
+  - [Pattern matching](#pattern-matching)  - [Deconstruction](#deconstruction)  
+  - Ref returns and locals (TODO)   - [Local functions](#local-functions)  
+  - More expression-bodied members (TODO)  - throw Expressions (TODO)  
+  - Generalized async return types (TODO)  - Numeric literal syntax improvements (TODO)
 
-* <a name="csharp-9"></a>C# 9.0
-   - [Record types](#record-types)
-   - [Init only setters](#init-only-setters)
-   - [Top-level statements](#top-level-statements)
-   - Pattern matching enhancements (TODO)
-   - Performance and interop (TODO)
-   - Fit and finish features (TODO)
-   - Support for code generators (TODO)
+* <a name="csharp-71"></a>C# 7.1  
+  - Async main (TODO)   - Default literal expressions (TODO)   - Inferred tuple element names (TODO)
 
-* <a name="csharp-10"></a>C# 10.0
-   - [Record structs](#record-structs)
-   - [Global using directives](#global-using-directives)
-   - File-scoped namespace declaration (TODO)
-   - Interpolated string handlers (TODO)
-   - Extended property patterns (TODO)
+* <a name="csharp-72"></a>C# 7.2  
+  - Reference semantics with value types (TODO)   - Non-trailing named arguments (TODO)  
+  - Leading underscores in numeric literals (TODO)  - private protected access modifier (TODO)
 
-* <a name="csharp-11"></a>C# 11.0
-   - Raw String Literals (TODO)
-   - Generic Math Support (TODO)
-   - List Patterns (TODO)
-   - Required Members (TODO)
-   - Pattern Match Span on a Constant String (TODO)
+* <a name="csharp-73"></a>C# 7.3  
+  - More efficient safe code (TODO)  - Existing features better (TODO)
 
-* <a name="csharp-12"></a>C# 12.0
-   - Primary constructors (TODO)
-   - Collection expressions (TODO)
-   - Inline arrays (TODO)
-   - Optional parameters in lambda expressions (TODO)
-   - ref readonly parameters (TODO)
+* <a name="csharp-8"></a>C# 8.0  
+  - Readonly members (TODO)  - Default interface members (TODO)  - Pattern matching enhancements (TODO)  
+  - Using declarations (TODO)  - Static local functions (TODO)  - Disposable ref structs (TODO)  
+  - Nullable reference types (TODO)  - Asynchronous streams (TODO)  - Indices and ranges (TODO)
 
-* <a name="csharp-13"></a>C# 13.0
-   - New escape sequence (TODO)
-   - Method group natural type (TODO)
-   - Implicit index access (TODO)
+* <a name="csharp-9"></a>C# 9.0  
+  - [Record types](#record-types)  - [Init only setters](#init-only-setters)  
+  - [Top-level statements](#top-level-statements)  - Pattern matching enhancements (TODO)  
+  - Performance and interop (TODO)  - Fit and finish features (TODO)  - Support for code generators (TODO)
+
+* <a name="csharp-10"></a>C# 10.0  
+  - [Record structs](#record-structs)  - [Global using directives](#global-using-directives)  
+  - File-scoped namespace declaration (TODO)  - Interpolated string handlers (TODO)  
+  - Extended property patterns (TODO)
+
+* <a name="csharp-11"></a>C# 11.0  
+  - Raw String Literals (TODO)  - Generic Math Support (TODO)  
+  - List Patterns (TODO)  - Required Members (TODO)  - Pattern Match Span on a Constant String (TODO)
+
+* <a name="csharp-12"></a>C# 12.0  
+  - Primary constructors (TODO)  - Collection expressions (TODO)  
+  - Inline arrays (TODO)  - Optional parameters in lambda expressions (TODO)  
+  - ref readonly parameters (TODO)
+
+* <a name="csharp-13"></a>C# 13.0  
+  - New escape sequence (TODO)  - Method group natural type (TODO)  - Implicit index access (TODO)
+
 
 **[⬆ back to top](#table-of-contents)**
 
