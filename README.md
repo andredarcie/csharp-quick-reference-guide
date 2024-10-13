@@ -1876,36 +1876,20 @@ public void TraceMessage(string message,
 ## Asynchronous methods
 <sup>[[C# 5.0](#csharp-5)]</sup>
 ```csharp
-// For I/O-bound code, you await an operation which returns a Task or Task<T> inside of an async method.
-private readonly HttpClient _httpClient = new HttpClient();
-
-downloadButton.Clicked += async (o, e) =>
+// For I/O-bound code
+async Task<string> FetchDataAsync(string url)
 {
-    // This line will yield control to the UI as the request
-    // from the web service is happening.
-    //
-    // The UI thread is now free to perform other work.
-    var stringData = await _httpClient.GetStringAsync(URL);
-    DoSomethingWithData(stringData);
-};
-
-// For CPU-bound code, you await an operation which is started on a background thread with the Task.Run method.
-private DamageResult CalculateDamageDone()
-{
-    // Code omitted:
-    //
-    // Does an expensive calculation and returns
-    // the result of that calculation.
+    HttpClient client = new HttpClient();
+    return await client.GetStringAsync(url);
 }
 
-
-calculateButton.Clicked += async (o, e) =>
+// For CPU-bound code
+async Task<int> CalculateAsync()
 {
-    // This line will yield control to the UI while CalculateDamageDone()
-    // performs its work.  The UI thread is free to perform other work.
-    var damageResult = await Task.Run(() => CalculateDamageDone());
-    DisplayDamage(damageResult);
-};
+    return await Task.Run(() => ExpensiveCalculation());
+}
+
+int ExpensiveCalculation() => 42; // Simulated expensive calculation
 ```
 
 **[⬆ back to top](#table-of-contents)**
